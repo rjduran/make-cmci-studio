@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#ef5350">
+        <meta name="theme-color" content="#03a9f4">
       
     
     
@@ -67,7 +67,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="red" data-md-color-accent="light-blue">
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="red">
   
     <svg class="md-svg">
       <defs>
@@ -328,6 +328,19 @@
   <a href="#week-4-web-development" title="Week 4: Web Development" class="md-nav__link">
     Week 4: Web Development
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-3-intro-to-web-development" title="Assignment 3: Intro to Web Development" class="md-nav__link">
+    Assignment 3: Intro to Web Development
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1185,6 +1198,19 @@
     Week 4: Web Development
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-3-intro-to-web-development" title="Assignment 3: Intro to Web Development" class="md-nav__link">
+    Assignment 3: Intro to Web Development
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1544,6 +1570,207 @@ Digital Fabrication Workflows - 3D Printing, Laser Cutting, CNC Milling
 
 <h2 id="week-4-web-development">Week 4: Web Development<a class="headerlink" href="#week-4-web-development" title="Permanent link">&para;</a></h2>
 <p><em>Sept 16</em></p>
+<p>For the next few weeks we will talk about web development paradigms and practices and you will begin to build your web development skills inside and outside of class. We will approach each topic with simplicity in mind and focus on understanding fundamental concepts. To build advanced skills with the tools we discuss you will need to dedicate time outside of class for further experimentation. We will approach topics in a hands-on workshop format so be prepared to dive in.</p>
+<p>If you do have some web development experience coming into the program think about some new aspects of development you are curious about such as libraries, frameworks, responsive, animations, Javascript, types of tech stacks, or just how you can improve your skills in what you know through practice. </p>
+<p><strong>The goal of the weeks ahead is to gain a sense of how you can utilize web technologies to solve problems.</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are curious about the history of electronics, computers, computer science, programming, and the Internet, check out the <a href="/dev/histories">Histories</a> section. I strongly advise you to start getting familiar with the various histories and technological underpinnings of the technologies you use every day. Remember, it's also about building awareness and understanding about the systems that run our world. These resources are meant to work through at your own speed and as you begin to ask deeper questions about why something works and how something works.</p>
+</div>
+<p><strong>The World Wide Web</strong></p>
+<ul>
+<li>
+<p>What is the World Wide Web, where did it come from, and what is its purpose?</p>
+<p><strong>The purpose of building websites and web applications is to make an idea accessible to one or more people.</strong></p>
+</li>
+<li>
+<p>How does it work?</p>
+</li>
+<li>What is it made of?</li>
+</ul>
+<p><strong>The Industry</strong></p>
+<ul>
+<li>What do web developers do?</li>
+<li>What do web developers need to know?</li>
+<li>How do you learn web development skills? (HINT: Practice, practice, practice)</li>
+</ul>
+<p><strong>Languages</strong></p>
+<p>In the resources here you can find some learning pathways for building skills with these tools. Make time to read through the basics of all the languages and try things out. Most importantly, seek to apply the skills you are learning towards projects.</p>
+<ul>
+<li><a href="/dev/#hypertext-markup-language-html">HTML</a> / <a href="/dev/learning-html-css">Learning HTML &amp; CSS</a></li>
+<li><a href="/dev/#cascading-style-sheets-css">CSS</a></li>
+<li><a href="/dev/#javascript-js">Javascript</a> / <a href="/dev/learning-js">Learning Javascript</a></li>
+</ul>
+<p><strong>Development Environment</strong></p>
+<p>Lets get started by setting up a development environment. The most basic things you need for any web development tasks are a text editor and a browser like Chrome, Safari, or Firefox. Other tools such as the Terminal, Git, Github, and Node.js enable you to work with all sorts of libraries and frameworks, collaborate with others, and quickly prototype new ideas. All these tools come together under the idea of running a "local development server" or localhost on your machine. </p>
+<ul>
+<li>Text Editors<ul>
+<li>TextEdit - Default editor on MacOS<ul>
+<li><a href="https://www.nayuki.io/page/what-are-binary-and-text-files">ASCII vs Binary Files</a></li>
+</ul>
+</li>
+<li><a href="https://atom.io/">Atom</a> - Free editor by Github<ul>
+<li><a href="https://atom.io/packages">Atom Packages</a> / <a href="https://github.com/rjduran/cm-tools/blob/master/atom-setup.md">My Atom Setup</a></li>
+</ul>
+</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a> - Free editor by Microsoft. My editor of choice.</li>
+</ul>
+</li>
+<li><a href="/dev/#terminals">Terminal</a><ul>
+<li>How I use terminal (preferences, themes, .bash_profile, aliases, etc)</li>
+<li>Location on MacOS: <em>Applications/Utilities/Terminal.app</em></li>
+<li><a href="/dev/learning-terminal">Learning Terminal</a> - Cheetsheets and more!</li>
+</ul>
+</li>
+<li><a href="https://github.com/">Github</a> - Website that hosts git repositories. Learning how to use version control systems such as Git and Github enable many people to collaborate.<ul>
+<li><a href="/dev/learning-git">Learning Git</a> - A great place to start learning about Git and Github.</li>
+</ul>
+</li>
+<li>Local Development Server<ul>
+<li>There are several ways to work with a local web server. Some are simpler than others to setup and configure. For our purposes we will often use a <a href="https://nodejs.org/en/">Node.js</a> based <a href="http://tapiov.net/live-server/">live-server</a> environment, which is really just a node module (<a href="https://www.npmjs.com/">npm</a>) running on the Node.js Javascript framework.</li>
+<li>Its mostly a matter of personal or project preference which local web server option you use, if any. Sometimes development is done on a remote server (ie. AWS) or a combo of local and remote. </li>
+<li><a href="/repos/#how-to-build-a-sandbox">How to Build a Sandbox</a> - Short tutorial showing how to setup a flexible local development environment using Node.js.</li>
+<li>Examples of using live-server can be found at: <a href="https://github.com/rjduran/cm-code/tree/master/live-servers">cm-code/live-servers</a>.</li>
+</ul>
+</li>
+<li>Chrome Browser<ul>
+<li>Chrome Dev Tools (Inspector for debugging). <em>Access via: View &gt; Developer &gt; Developer Tools</em> within Chrome.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Terminal, Git, and Github</strong></p>
+<ol>
+<li>Terminal<ul>
+<li>Location on MacOS: Applications/Utilities/Terminal.app</li>
+<li>How do you display hidden files on MacOS? <a href="/dev/learning-terminal">Look here</a></li>
+<li>Customize your Terminal in Terminal &gt; Preferences. It helps to make the text larger on most screens.</li>
+<li>Common commands: <code>cd, ls, mkdir, rmdir, rm, mv, cp, pwd, man, touch</code>. Think of all these commands as tiny applications that have no GUI. They are very old and have been around since the start of Unix based systems (Read this to learn more: <a href="https://www.macworld.com/article/1154036/software-utilities/osxorigins.html">Looking back at OS X's origins</a>). Look at <a href="https://learntocodewith.me/command-line/unix-command-cheat-sheet/">MacOS/Linux/Unix Command Line Cheat Sheet</a> to see more information about common commands.</li>
+<li>Working with directories and files:<ul>
+<li><code>cd &lt;folder&gt;</code> - Goto into a folder</li>
+<li><code>cd ..</code> - Go up one level</li>
+<li><code>cd ../&lt;folder&gt;</code> - Go up one level (to parent folder) and into a child folder</li>
+<li><code>cd ../..</code> - Go up two levels etc</li>
+<li>Tab completion - When you start typing in a terminal you can hit tab to complete the command if the file or folder you are going to use is available. If you hit Tab twice, you will see the contents of a folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How to Setup Git<ul>
+<li>You will likely not have Git installed on your machine. You will know if you have it or not when you type <code>git</code> into the Terminal. You may be prompted to install XCode Developer Tools in doing so. You have two options to install git: Install the XCode Developer tools (easy way) or download the installer from <a href="https://git-scm.com/">git-scm</a>.</li>
+<li>After installing it the <code>git</code> command should work in the Terminal.</li>
+</ul>
+</li>
+<li>How to Use Github<ul>
+<li>Register for an account on Github. (<em>Stuck on choosing a username? Read this. <a href="https://athityakumar.github.io/blog/posts/A_Tale_of_GitHub_Usernames/">A Tale of Github Usernames</a></em>)</li>
+<li><a href="https://help.github.com/en/articles/create-a-repo">Create a repo on Github</a>. If you check the box to add a README file it will include a README.md file in the repo. This is the main information file shown when you goto the repo URL. Markdown = text file with special syntax that gets converted into HTML. Review <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a>.    </li>
+<li>Clone Repo: <code>git clone &lt;repo url&gt;</code>. For Example, <code>git clone git@github.com:rjduran/cm-sandbox.git</code>. Note the URL and its use of "git" or "https". Use "https" to start. You need to go through the Github tutorial below to connect to Github via SSH.</li>
+<li>Make some changes: (Using text editor of some kind - Atom, VSCode, TextEdit)</li>
+<li>Stage the changes: <code>git add index.html</code></li>
+<li>Commit the changes: <code>git commit -m "my message describing changes"</code></li>
+<li>Push the changes: <code>git push</code></li>
+<li><em>Pro tip: After setting up your Github account, read through <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Connecting to Github with SSH</a> to setup your system to connect securely to Github and not require you to enter your username and password credentials each time you push changes.</em>            </li>
+</ul>
+</li>
+</ol>
+<p><strong>In Class Exercises</strong></p>
+<p><strong>Opening files in browser</strong></p>
+<ol>
+<li>Setup a folder and create an index.html file in it.</li>
+<li>Insert some html and css code and reload in browser to view the changes.</li>
+<li>Repeat</li>
+</ol>
+<p><strong>Using a local development server</strong></p>
+<ol>
+<li>Setup local dev server (localhost).</li>
+<li>Insert some html and css code and watch the page change in browser automagically (because of live-server).</li>
+<li>Repeat</li>
+</ol>
+<p><strong>Deconstructing Websites</strong></p>
+<ol>
+<li>Look at a website you think is interesting.</li>
+<li>Using the Chrome development tools, inspect the site. Look at the page elements, the overall structure of the html, css, and js. Get familiar with the deveelopment tools interface / console. </li>
+<li>If you are more comfortable in Photoshop or Illustrator, take screenshots of the website and lay them out to annotate. Put screenshots on a layer and annotations on another layer. You could even use wireframe tools or hand sketch out the structure of pages and label elements by tag. </li>
+<li>Start matching up the page elements with HTML tags - h1, h2, p, li, a, div, etc. <em>(Tip: Look at <a href="https://www.w3schools.com/tags/">W3 Schools HTML Element Reference</a>)</em></li>
+</ol>
+<h3 id="assignment-3-intro-to-web-development">Assignment 3: Intro to Web Development<a class="headerlink" href="#assignment-3-intro-to-web-development" title="Permanent link">&para;</a></h3>
+<p>The goal of this week is to get familiar with a variety of web development tools and skills. You will work with HTML/CSS to build a simple webpage, you will choose a website to deconstruct, and you will get familar with the Terminal. You should also have a basic understanding of how to use Git and Github to commit and push files to a repository and pull or clone files from a repository on Github. These aspects of development will be used throughout the rest of the class so you there will be many chances to practice.</p>
+<p>This assignment has 3 parts:</p>
+<p><strong>Part 1: Setup your local development environment</strong></p>
+<p>We will work through some of these items in class. If you get stuck, look at the notes above, ask a neighbor, or send a message via slack. With this setup you should be able to protoype any kind of website or web app locally via live-server running in the Terminal and browser.</p>
+<ul>
+<li>Install a Text Editor</li>
+<li>Install Git</li>
+<li>Install Node.js</li>
+<li>Install live-server (npm)</li>
+<li>Open Browser and goto http://127.0.0.1:8080/</li>
+</ul>
+<p><strong>Part 2: Deconstruct a website</strong></p>
+<p>Choose a 1-2 pages of a website to deconstruct and analyze it to the best of your abilities. For this exercise, just focus on the HTML elements of the pages. Optional: If you want to go a step further, attempt to deconstruct the styles and javscript used in the page too. The purpose of this is to gain an understanding of what a developer does to translate web designs or wireframes into functional code. </p>
+<ul>
+<li>Utilize tools such as the Chrome development tools and an annotation method to describe the overall structure of a page. </li>
+<li>Annotate HTML elements with text labels over screenshots of the website, wireframes, or hand sketches.</li>
+<li>Embed your annotated images into your blog post with a brief writeup of your process and outcomes.</li>
+</ul>
+<p><strong>Part 3: Ode to Things</strong></p>
+<p>Choose one (or more) every day object(s) in your life and make a simple website for it / them. You might consider the site as a container for a favored item or collection of things, a product to sell, or simply a site that pays tribute to the item or object and what it means to you in life. This idea was inspired by the website <a href="https://www.odetothings.com/">Ode to Things</a>, which is an e-commerce store and curated collection of physical every day products.</p>
+<ul>
+<li>Build a webpage from scratch that makes use of html elements and css selectors.</li>
+<li>Use necessary html elements that act as containers for different types of content and page heirarchy: text, images, video, etc.</li>
+<li>Develop your webpage using your local development environment setup in Part 1. </li>
+<li>When done, make a repository on Github for your project and commit the index.html and any media files to it. I should be able to clone your project repo and run it in a localhost on my machine to see the same result. </li>
+</ul>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>
+<p>A 1-2 min video screen capture demonstrating your local development environment as setup in Part 1 and your webpage built in Part 3. Embed the video into your blog post. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are new to screen capture tools, look into using <a href="https://screencast-o-matic.com/">Screencast-o-matic</a> to document your workflow. Create an account with Youtube or Vimeo if necessary and upload your video. Note: MacOS (Mojave) has a built in screen recorder tool with key command Shift + Command + 5.</p>
+</div>
+</li>
+<li>
+<p>Include a link to your Github repo for the code written in Part 3 in your blog post.</p>
+</li>
+<li>A brief writeup on your blog about your learning experience. What hurdles did you encounter and how did you overcome them? What worked and what didn't? What new tools did you try? How would you explain what you've done to someone that doesn't know anything about web development and the tools used?</li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> before our next class.</p>
+<p><strong><em>Due: Sept 23</em></strong></p>
+<p><strong>Resources</strong></p>
+<ul>
+<li>History<ul>
+<li><a href="/dev/histories/#history-of-web-languages">History of Web Languages</a></li>
+<li><a href="https://www.geeksforgeeks.org/whats-difference-internet-web/">What’s difference between The Internet and The Web ?</a></li>
+<li><a href="http://osxdaily.com/2019/02/22/run-very-first-web-browser-worldwideweb/">Run the Very First Web Browser from 1990, WorldWideWeb</a></li>
+</ul>
+</li>
+<li>Stacks &amp; Maps<ul>
+<li><a href="https://skillcrush.com/2017/02/27/front-end-back-end-full-stack/">Front End, Back End, Full Stack—What Does it All Mean?</a></li>
+<li><a href="https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html">Front-End vs Back-End vs Full-Stack on Udacity</a></li>
+<li><a href="https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c">A Guide to Becoming a Full-Stack Developer in 2017</a> - If you only read one of these, read this one.</li>
+<li><a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f">How it feels to learn JavaScript in 2016</a> - Read through this and see if you can begin to make sense of the current development ecosystem. (Note: Its complex and a little bit insane but this guy makes a good (fun) read of it.)</li>
+<li><a href="https://medium.com/codingthesmartway-com-blog/the-2019-roadmap-to-fullstack-web-development-1bba67a54ae8">The 2019 Roadmap To Fullstack Web Development</a></li>
+<li><a href="https://hackernoon.com/the-2019-web-developer-roadmap-ab89ac3c380e">The 2019 Web Developer Roadmap</a> - Has some great flowcharts showing how different technologies relate / <a href="https://github.com/kamranahmedse/developer-roadmap">Github Source</a>.</li>
+</ul>
+</li>
+<li>Git / Github    <ul>
+<li><a href="/dev/learning-git">Learning Git</a></li>
+<li><a href="/dev/learning-git/#markdown">Markdown</a> - Resources for the Markdown language used by Github README files.</li>
+</ul>
+</li>
+<li>Terminal<ul>
+<li><a href="/dev/learning-terminal">Learning Terminal</a> - A learning pathway for beginners</li>
+<li><a href="http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/">How to use Terminal on Mac</a>, <a href="https://gist.github.com/jirutka/99d57c82fa8981f56fb5">How to use a Terminal on Windows</a></li>
+<li>Cheat Sheets<ul>
+<li><a href="https://learntocodewith.me/command-line/unix-command-cheat-sheet/">MacOS/Linux/Unix Command Line Cheat Sheet</a></li>
+<li><a href="https://gist.github.com/poopsplat/7195274">Mac Terminal Cheat Sheet</a></li>
+<li><a href="https://github.com/0nn0/terminal-mac-cheatsheet">Another Cheat Sheet</a></li>
+<li><a href="https://www.git-tower.com/blog/command-line-cheat-sheet/">Command Line Cheat Sheet by git-tower</a> - This one is great for both git and terminal commands!     </li>
+</ul>
+</li>
+<li><a href="http://www.macworld.co.uk/how-to/mac-software/how-show-hidden-files-library-folder-mac-3520878/">How to show hidden files and folders including ~/Library on a Mac</a> - The benefit of doing this is you can see whats <em>actually</em> on your machine. By default, MacOS and Windows systems hide lots of stuff. To be a master of your machine(s) you need to begin learning whats hidden just under the surface.</li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="week-5-web-applications-frameworks">Week 5: Web Applications &amp; Frameworks<a class="headerlink" href="#week-5-web-applications-frameworks" title="Permanent link">&para;</a></h2>
 <p><em>Sept 23</em></p>
