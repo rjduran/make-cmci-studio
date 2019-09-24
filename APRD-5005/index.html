@@ -349,6 +349,19 @@
     Week 5: Computational Thinking, Intro to Javascript
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-4-js-in-action" title="Assignment 4: JS in Action" class="md-nav__link">
+    Assignment 4: JS in Action
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1218,6 +1231,19 @@
     Week 5: Computational Thinking, Intro to Javascript
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-4-js-in-action" title="Assignment 4: JS in Action" class="md-nav__link">
+    Assignment 4: JS in Action
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1928,88 +1954,74 @@ Digital Fabrication Workflows - 3D Printing, Laser Cutting, CNC Milling
 </ul>
 </li>
 </ul>
-<p><strong>In Class Exercises</strong></p>
-<p>Console Basics</p>
+<h4 id="assignment-4-js-in-action">Assignment 4: JS in Action<a class="headerlink" href="#assignment-4-js-in-action" title="Permanent link">&para;</a></h4>
+<p>The goal of this week is to gain a better understanding of Javascript by researching uses that interest you and by experimentation with the developer console. Part 1 is required but Part 2 is optional. I highly encourage you to work through part 2 because it will further your understanding of how to work with the language in the browser.  </p>
+<p>This assignment has 2 parts:</p>
+<p><strong>Part 1: JS Examples</strong></p>
+<p>Research 2-3 examples of Javascript in action. Look at the resources above and investigate uses of JS that interest you. Try to identify what the JS is doing behaviorally when you interact with it or by observing its dynamic behavior in a page. Attempt to identify libraries (if any) that are used to build the functionality you see and interact with. </p>
+<p>Javascript is so versatile that at times it might be difficult to decipher from simply looking at the behavior in the browser. You have to dig into the Developer Tools and inspect beyond the page elements and into the files that are being downloaded from the server (Hint: Look in the Network tab within the Developer Tools).</p>
+<p><strong>Part 2: Experiment with the DOM (Optional)</strong></p>
+<p>Work through the resources and exercises below to gain familiarity with the developer console and the Document Object Model (DOM). </p>
+<p>To get started:</p>
 <ul>
-<li>Clone <a href="https://github.com/rjduran/cm-javascripting">cm-javascripting</a> and start up a live-server in the "starter" directory.</li>
+<li>Clone <a href="https://github.com/rjduran/cm-javascripting">cm-javascripting</a> and start up a live-server in the "starter" directory. With live-server running, open the Chrome Developer tools Console and enter: <code>document</code>. You will get a representation of the entire HTML document as an object. The document object is the top level object in the DOM. </li>
+<li><a href="https://www.w3schools.com/jsref/dom_obj_document.asp">Read through this list of Properties and Methods</a> for the <strong>document</strong> object and to understand what you can see in the console. Use this as a reference for the following challenges.</li>
+<li>Watch the videos 1-5 in <a href="https://www.youtube.com/watch?v=FIORjGvT0kk&amp;list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V">this tutorial series</a> to get a sense of how to complete the following challenges. </li>
+</ul>
+<p>Console Basics:</p>
+<p>Tip: As you type code into the developer console be careful not to reload the page or you will wipe out what is in the console. To keep a backup of the Javascript entered just make a temporary .txt or .js file and copy and paste your code.</p>
+<ol>
 <li>Open the Developer Console and type <code>document</code>.</li>
 <li>Define an integer variable: <code>var a = 1;</code></li>
 <li>Define a string variable: <code>var name = "Your Name";</code></li>
+<li>Define an array that stores numbers: 1,3,5,7,9</li>
 <li>Define a function called "helloWorld" that prints "Hello World" to the console when called. </li>
 <li>Defing a function called "printName" that prints out your name when called;</li>
-<li>Define a function that prints any name entered as parameter when called. <ul>
-<li>What happens when you overwrite an existing function?</li>
-</ul>
-</li>
-</ul>
-<p>DOM Basics</p>
-<ul>
-<li>Get a reference to all the paragraph (p) tags in the document.</li>
-<li>Get a reference to a paragraph tag with a specific id of "second".</li>
-<li>Get a reference to a all paragraph tags with a class of "first".</li>
+<li>Define a function that prints any name entered as parameter when called. What happens when you overwrite an existing function?</li>
+</ol>
+<p>DOM Basics:</p>
+<p>Getting Elements</p>
+<ol>
+<li>Get a reference to all the paragraph (p) tags in the document.<br><em>Hint: Look at <code>getElementsByTagName()</code></em></li>
+<li>Get a reference to a paragraph tag with a specific id of "second".<br><em>Hint: Look at <code>getElementById()</code></em></li>
+<li>Get a reference to a all paragraph tags with a class of "first".<br><em>Hint: Look at <code>getElementsByClassName()</code></em></li>
+<li>Get a reference to an element or elements within another element. For example, if you have an unordered list (ul) with several list items (li), how do you select a specific li and display it's contents to the console?</li>
 <li>Change the active color of the sidebar to red.</li>
-<li>Change the text within a sidebar list item (li) to "Foo".</li>
+</ol>
+<p>Changing Elements</p>
+<ol>
+<li>Change the text within a sidebar list item (li) to "Foo".
+Change the text within the previously selected list item (li) to "Greetings List Item! I'm a string from another planet!".</li>
+<li>Change the text of a specific paragraph to a different string of text. Use an Ipsum generator tool to create new placeholder text that you insert using Javascript.</li>
+</ol>
+<p>Removing Elements</p>
+<ol>
 <li>Clear the contents of the paragraph with an id of "empty-me".</li>
+<li>Clear the contents of the set of paragraphs with class "empty-us".</li>
+<li>Remove the div with a specific id of "section3".</li>
+</ol>
+<p>Adding Elements</p>
+<ol>
+<li>Create a new anchor tag that links to your blog and insert it just after the paragraph tag in the div with an id of "about".</li>
+<li>Append a new div anywhere in the document and give it an id of your choice. Insert a paragraph with some content into the div using javascript.</li>
+<li>Add a new list item to the sidebar ul that links to your new div so you can click and scroll to it.</li>
 <li>Add a new list item with URL to www.google.com in the sidebar.</li>
-</ul>
-<!--
-
-#### Assignment 4: Javascripting
-
-Write Javascript code that allows you to get familiar with the interplay of JS and HTML through inspection and manipulation of the DOM.
-
-_Note: All the code you enter can be placed in the script section of the index.html file at the end of the body tag. Alternatively, you can use a linked script.js file if you choose._
-
-To get started:
-
-* Clone [cm-javascripting](https://github.com/rjduran/cm-javascripting) and start up a live-server in the "starter" directory. With live-server running, open the Chrome Developer tools Console and enter: `document`. You will get a representation of the entire HTML document as an object. The document object is the top level object in the DOM.
-* [Read through this list of Properties and Methods](https://www.w3schools.com/jsref/dom_obj_document.asp) for the **document** object and to understand what you can see in the console. Use this as a reference for the following challenges.
-* Watch the first 5 videos in this tutorial series to get a sense of how to complete the following challenges. 
-    * [JavaScript DOM Tutorial Series (Video Playlist)](https://www.youtube.com/watch?v=FIORjGvT0kk&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V)
-
-Challenges:
-
-1. Getting Elements
-
-      * Get a reference to all the paragraph (p) tags in the document.<br>_Hint: Look at `getElementsByTagName()`_
-      * Get a reference to a paragraph tag with a specific id of "second".<br>_Hint: Look at `getElementById()`_
-      * Get a reference to a all paragraph tags with a class of "first".<br>_Hint: Look at `getElementsByClassName()`_
-      * Get a reference to an element or elements within another element. For example, if you have an unordered list (ul) with several list items (li), how do you select a specific li and display it's contents to the console?
-
-2. Changing Elements
-
-      * Change the text within the previously selected list item (li) to "Greetings List Item! I'm a string from another planet!".
-      * Change the text of a specific paragraph to a different string of text. Use an Ipsum generator tool to create new placeholder text that you insert using Javascript.
-
-3. Removing Elements
-
-      * Clear the contents of the paragraph with an id of "empty-me".
-      * Clear the contents of the set of paragraphs with class "empty-us".
-      * Remove the div with a specific id of "section3".
-
-4. Adding Elements
-
-      * Create a new anchor tag that links to your blog and insert it just after the paragraph tag in the div with an id of "about".
-      * Append a new div anywhere in the document and give it an id of your choice. Insert a paragraph with some content into the div using javascript.
-      * Add a new list item to the sidebar ul that links to your new div so you can click and scroll to it.
-
-5. Event Listeners
-
-      * Make an event listener for any h2 element that triggers an `alert()` when you click it. Set the alert message to "Hey Hey Hey!".
-      * Make an event listener that triggers a change in the text of a specific paragraph with the id "change-me".
-
-**Deliverable:**
-
-  1. A 1-2 min video screen capture demonstrating your workflow. Show your code running in the browser and/or the Developer Console and describe what's going on. Embed the video into your blog post. 
-  2. Create a github repo for this assignment called "cm1-a4-javascripting". Include a link to your repo for the code written in your blog post. Look at some [Markdown resources](/dev/learning-git/#markdown) for writing a good README for your Github project if you haven't used the Markdown language yet.
-  3. A brief writeup on your blog about your learning experience. What hurdles did you encounter and how did you overcome them? What worked and what didn't? What new tools did you try? How would you explain what you've done to someone that doesn't know anything about web development and the tools used?
-
-Submit a link to your post on Slack **#cmstudio** before our next class.
-
-**_Due: Sept 30_** 
-
--->
-
+</ol>
+<p>Event Listeners</p>
+<ol>
+<li>Make an event listener for any h2 element that triggers an <code>alert()</code> when you click it. Set the alert message to "Hey Hey Hey!".</li>
+<li>Make an event listener that triggers a change in the text of a specific paragraph with the id "change-me".</li>
+</ol>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>A 1-2 min video screen capture showing the examples you researched in Part 1. Talk about how the examples work from the perspective of user exeprience and design. What goal is being solved by using JS in this context? Embed the video into your blog post.</li>
+<li>(Optional) If you worked through Part 2, demonstrate some of your workflow in the developer console and describe what's going on. Include this portion in your video. </li>
+<li>(Optional) Create a github repo for this assignment called "cm1-a4-javascripting" to document the code you created for Part 2. Include a link to your repo for the code written in your blog post. Look at some <a href="/dev/learning-git/#markdown">Markdown resources</a> for writing a good README for your Github project if you haven't used the Markdown language yet.</li>
+<li>A brief writeup on your blog about your learning experience. What hurdles did you encounter and how did you overcome them? What worked and what didn't? What new tools did you try? How would you explain what you've done to someone that doesn't know anything about web development and the tools used?</li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> before our next class.</p>
+<p><strong><em>Due: Sept 30</em></strong> </p>
+<p>--&gt;</p>
 <hr />
 <h2 id="week-6-web-libraries-frameworks-and-applications">Week 6: Web Libraries, Frameworks, and Applications<a class="headerlink" href="#week-6-web-libraries-frameworks-and-applications" title="Permanent link">&para;</a></h2>
 <p><em>Sept 30</em></p>
