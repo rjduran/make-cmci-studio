@@ -385,8 +385,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-7-physical-computing" title="Week 7: Physical Computing" class="md-nav__link">
-    Week 7: Physical Computing
+  <a href="#week-7-intro-to-physical-computing-intro-to-arduino" title="Week 7: Intro to Physical Computing, Intro to Arduino" class="md-nav__link">
+    Week 7: Intro to Physical Computing, Intro to Arduino
   </a>
   
 </li>
@@ -1316,8 +1316,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-7-physical-computing" title="Week 7: Physical Computing" class="md-nav__link">
-    Week 7: Physical Computing
+  <a href="#week-7-intro-to-physical-computing-intro-to-arduino" title="Week 7: Intro to Physical Computing, Intro to Arduino" class="md-nav__link">
+    Week 7: Intro to Physical Computing, Intro to Arduino
   </a>
   
 </li>
@@ -2026,7 +2026,7 @@ Digital Fabrication Workflows - 3D Printing, Laser Cutting, CNC Milling
 <p><a href="http://letmegooglethat.com/?q=awesome+js+examples">let me google that for you...</a></p>
 <p><em>List of JS Examples (Added on 4 Oct 2019)</em></p>
 <ul>
-<li><a href="http://highrise.nfb.ca/">High Rise</a> - An Emmy-winning, multi-year, many-media, collaborative documentary experiment at the National Film Board of Canada, that explores vertical living around the world.</li>
+<li><a href="http://highrise.nfb.ca/">High Rise</a></li>
 <li><a href="http://nouvellevague.ultranoir.com/">Ultra Noir - Nouvelle Vague</a></li>
 <li><a href="http://www.histography.io/">Histography</a></li>
 <li><a href="https://thestlbrowns.com/">St Louis Browns</a></li>
@@ -2315,8 +2315,170 @@ P5.js
 <hr />
 <!-- Phase: Hardware UX -->
 
-<h2 id="week-7-physical-computing">Week 7: Physical Computing<a class="headerlink" href="#week-7-physical-computing" title="Permanent link">&para;</a></h2>
+<h2 id="week-7-intro-to-physical-computing-intro-to-arduino">Week 7: Intro to Physical Computing, Intro to Arduino<a class="headerlink" href="#week-7-intro-to-physical-computing-intro-to-arduino" title="Permanent link">&para;</a></h2>
 <p><em>Oct 7</em></p>
+<ul>
+<li>Assignment 5 Share</li>
+<li>JavaScript is not Java, but you will be using a Java like language next. </li>
+<li>We're moving on to look at electronics, hardware, and looking at how we design interactive systems with it. </li>
+</ul>
+<p><strong>What is Physical Computing?</strong></p>
+<p>Physical Computing is an approach to computer-human interaction design that starts by considering how humans express themselves physically. Computer interface design instruction often takes the computer hardware for given — namely, that there is a keyboard, a screen, speakers, and a mouse or trackpad or touchscreen — and concentrates on teaching the software necessary to design within those boundaries. In physical computing, we take the human body and its capabilities as the starting point, and attempt to design interfaces, both software and hardware, that can sense and respond to what humans can physically do.</p>
+<p>This means that we have to learn how a computer converts the changes in energy given off by our bodies, in the form of heat, light, sound, and so forth, into changing electronic signals that it can be read and interpreted by computers. In physical computing, this is accomplished by connecting sensors to the simplest of computers, called microcontrollers, in order to read these changes and interpret them as actions. Within the microcontroller, custom software acts as the behaviour or control logic driving a variety of digital and physical outputs such as graphics, light, motion, and sound. </p>
+<p><em>Source 1: Adapted from "What is Physical Computing?" by <a href="https://www.tigoe.com/blog/what-is-physical-computing/">Tom Igoe (ITP, NYU)</a></em><br>
+<em>Source 2: <a href="https://docs.google.com/presentation/d/1mWAM8oLDh0kVCJZVjFoOw9ZUYaAKDwSBfhyw7fatL2s/edit#slide=id.p">Intro to Physical Computing Slides</a> by <a href="http://www.smoothware.com/danny/">Danny Rozin (ITP, NYU)</a></em></p>
+<p><strong>First, some fun examples...</strong></p>
+<p>There's no lack of interesting projects out there at this time (2019). The field of physical computing has been evolving since the introduction of the Arduino in 2005.</p>
+<ul>
+<li><a href="http://ciid.dk/education/portfolio/idp17/courses/physical-computing-connected-devices/projects/circula/">Circula</a></li>
+<li><a href="http://ciid.dk/education/portfolio/idp17/courses/physical-computing-connected-devices/projects/weplug/">WePlug</a></li>
+<li><a href="https://www.dezeen.com/2018/10/18/studio-joachim-morineau-dripping-machine-ceramic-design/">Dripping Machine for Ceramics</a></li>
+<li><a href="https://spectrum.ieee.org/automaton/robotics/home-robots/greeting-machine-explores-extreme-minimalism-in-social-robots">Minimalist Greeting Robot</a></li>
+<li><a href="https://interactiondesign.sva.edu/projects/rot-bot">Rot Bot</a></li>
+<li><a href="https://create.arduino.cc/projecthub/pix3lot/pac-man-led-pixel-panel-costume-515666">Pacman Costumes</a></li>
+<li><a href="https://www.creativeapplications.net/c/face-trade-art-vending-machine-that-trades-mugshots-for-free-portraits/">Face Trade</a></li>
+</ul>
+<p><strong>Arduino <em>(what? why?)</em></strong></p>
+<p>Arduino is an open-source hardware and software platform for building digital devices and interactive objects that can sense and control objects in the physical and digital world.</p>
+<p><strong>Inputs (Sensors) -&gt; Behavior (Software) -&gt; Outputs (Action)</strong></p>
+<p>You can think about this type of device (microcontroller) as the interface between the physical and digital world. It allows you to translate physical phenomena into digital information and act upon it with software (code) to produce a kind of digital or physical output such as flashing a light or turning a motor. The Arduino and connected devices can be thought of as hardware "LEGOS" or building blocks to construct complex electro-mechanical, interactive, and responsive systems. </p>
+<p><strong>Basic Electronics and Hardware</strong></p>
+<p><strong>Tools of the Trade</strong></p>
+<ul>
+<li>Microcontrollers (Arduino UNO, Mini, Nano 33 IoT, etc)</li>
+<li>Breadboards, Hook up wires</li>
+<li>Input/Output Devices - Sensors and Actuators<ul>
+<li>Sensor Kits: <a href="https://www.elegoo.com/product/elegoo-upgraded-37-in-1-sensor-modules-kit-v2-0/">Elegoo 37-to-1 Sensor Kit V2.0</a>, <a href="https://www.instructables.com/id/Arduino-37-in-1-Sensors-Kit-Explained/">37-to-1 Sensors Kit Explained</a></li>
+<li>Some common interactions with input/output devices<ul>
+<li>Press Button (Physical) -&gt; Arduino -&gt; Flash RGB LED Red (Physical)</li>
+<li>Occlude Photoresistor (Physical) -&gt; Arduino -&gt; Print value to Serial Port (Digital)</li>
+<li>Turn Potentiometer (Knob) (Physical) -&gt; Arduino -&gt; Display value on LCD Display (Physical)</li>
+<li>Press Button (Physical) -&gt; Arduino -&gt; Send Data on USB (Serial Port) -&gt; Receive Data in Processing Sketch (Digital)         </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Circuit Diagrams &amp; Schematics<ul>
+<li>A circuit diagram, block diagram, or flowchart are ways of describing or communicating the coneectivity and functionality of an electrical device or system. </li>
+<li>Example: <a href="../imgs/arduino-uno-schematic.pdf">Arduino Uno Schematic</a>, <a href="../imgs/Arduino-BreadboardVsSchematic.png">Breadboard vs Schematic</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Arduino Boards</strong></p>
+<ul>
+<li><a href="https://www.arduino.cc/en/Main/Products">Official Arduino Boards</a><ul>
+<li><a href="https://store.arduino.cc/usa/arduino-uno-rev3">Arduino Uno Specs</a></li>
+<li><a href="https://www.circuito.io/blog/arduino-uno-pinout/">Arduino Uno Pinout Guide</a></li>
+</ul>
+</li>
+<li>There are many different shapes and sizes of Arduino's available, how do you choose hardware for a project?<ul>
+<li>Look for a guide such as the <a href="https://www.sparkfun.com/standard_arduino_comparison_guide">Arduino Comparison Guide</a> by Sparkfun to start.</li>
+<li>Decide what your project will do and what inputs and outputs it has. Also take into consideration how you plan to use the Arduino. <ul>
+<li>Does it use data from the physical world? </li>
+<li>Does it need to display information? </li>
+<li>Do you need all the features available in the board or can you get away with a smaller/cheaper/less capable one?</li>
+</ul>
+</li>
+<li>How much do you have to spend on the project? Look at the cost of supplies. Luckily most Arduinos are cheap but components and devices can add up.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Software</strong></p>
+<ul>
+<li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a> - Download and Install.<ul>
+<li><a href="https://www.arduino.cc/en/Reference/HomePage">Arduino Language Reference</a>    </li>
+<li>Serial Monitor (for monitoring board input and output) - Tools &gt; Serial Monitor    </li>
+</ul>
+</li>
+<li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples">Built In Examples</a><ul>
+<li><a href="https://www.arduino.cc/en/Tutorial/Blink">Blink</a> - Uses a LED</li>
+<li><a href="https://www.arduino.cc/en/Tutorial/Button">Button</a> - Uses a Button</li>
+<li><a href="https://www.arduino.cc/en/Tutorial/AnalogReadSerial">AnalogReadSerial</a> - Uses a Knob</li>
+<li><a href="https://www.arduino.cc/en/Tutorial/AnalogInOutSerial">AnalogInOutSerial</a> - Uses a Knob to dim LED with <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">Pulse Width Modulation (PWM)</a></li>
+<li><a href="https://www.arduino.cc/en/Tutorial/Sweep">Sweep</a> - Uses a small servo motor</li>
+<li><a href="https://www.arduino.cc/en/Tutorial/Knob">Knob</a> - Uses a small servo motor and knob</li>
+</ul>
+</li>
+<li>RJ's Examples (<a href="https://github.com/rjduran/cm-arduino">cm-arduino</a>)<ul>
+<li><a href="https://github.com/rjduran/cm-arduino/tree/master/RGB_LED_01">RGB LED 01</a> - Fade RGB LED up and and down with Red color. Uses an RGB LED w/ 220 ohm resistors.</li>
+<li><a href="https://github.com/rjduran/cm-arduino/tree/master/RGB_LED_02">RGB LED 02</a> - Cycles through colors with 1 sec delay for each. Uses an RGB LED w/ 220 ohm resistors.</li>
+<li><a href="https://github.com/rjduran/cm-arduino/tree/master/RGB_LED_03">RGB LED 03</a> - Adjust RGB colors / brightness with potentiometer. Adds 3 x potentiometers.</li>
+<li><a href="https://github.com/rjduran/cm-arduino/tree/master/Arduino_to_Processing">Arduino to Processing</a> - via Serial Communication</li>
+<li><a href="https://github.com/rjduran/cm-arduino/tree/master/Processing_to_Arduino">Processing to Arduino</a> - via Serial Communication</li>
+</ul>
+</li>
+<li><a href="https://www.tinkercad.com/">Autodesk TinkerCAD Circuit Simulator</a> - A great tool for simulating the behaviour of circuits without the hardware.</li>
+</ul>
+<p><strong>Input &amp; Output Devices</strong></p>
+<p><strong>Input Devices</strong></p>
+<ul>
+<li><a href="https://www.sparkfun.com/products/9288">Potentiometer</a> - AKA "Variable Resistor" AKA Knob<ul>
+<li>Trimpot (Knob)</li>
+<li>Joystick (Playstation Joystick)</li>
+<li>Slide Pot (Slider)</li>
+</ul>
+</li>
+<li><a href="https://www.sparkfun.com/categories/314">Buttons / Switches</a></li>
+<li><a href="https://www.sparkfun.com/products/9088">Light Sensor (Photoresistor)</a></li>
+<li><a href="https://www.sparkfun.com/categories/84">Distance / Motion / Proximity</a></li>
+<li><a href="https://www.sparkfun.com/categories/80">Accelerometer</a></li>
+<li>Temperature</li>
+<li>&amp; Many More!</li>
+</ul>
+<p><strong>Output Devices</strong></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Light-emitting_diode">Light Emitting Diodes (LEDs)</a><ul>
+<li>RGB LEDs</li>
+<li>Single/Multiple LEDs<ul>
+<li><a href="https://www.adafruit.com/category/168">Adafruit NeoPixels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>LCD Display</li>
+<li>Motors<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/motors-and-selecting-the-right-one">Motors and Selecting the Right One</a></li>
+<li>Servo Motors    <ul>
+<li>If you are interested in motors, start with trying to hook up and program a servo motor.</li>
+<li><a href="https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors">Adafruit Lesson 14. Servo Motors</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/hobby-servo-tutorial">Hobby Servo Tutorial</a></li>
+<li><a href="https://www.sparkfun.com/products/9347">Sparkfun Servo - Generic High Torque Continuous Rotation (Standard Size)</a></li>
+<li><a href="https://youtu.be/7Zs6fsMg9K8">How to use Servo (TinkerCAD Circuits Simulator)</a></li>
+</ul>
+</li>
+<li>Stepper Motors<ul>
+<li><a href="https://dronebotworkshop.com/stepper-motors-with-arduino/">Getting Started with Stepper Motors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Relays<ul>
+<li>A relay allows you to control high power AC devices such as a lamp or power strip with a low power digital device / microcontroller such as an Arduino or Raspberry Pi.</li>
+<li><a href="https://www.sparkfun.com/products/13815">Beefcake Relay Kit</a> / <a href="https://learn.sparkfun.com/tutorials/beefcake-relay-control-hookup-guide">Assembly Instructions</a></li>
+<li><a href="https://www.sparkfun.com/products/13769">Relay Shield v2.0</a> / <a href="https://wiki.evilmadscientist.com/Simple_Relay_Shield_Assembly_v2">Assembly Instructions</a></li>
+</ul>
+</li>
+<li><a href="https://www.kickstarter.com/projects/2007440405/cthulhu-shield">Cthulhu Shield</a> - An open source sensory substitution/sensory augmentation development platform for Arduino. Basically, this device allos you to interact with electronics using your toungue. What?!</li>
+</ul>
+<p><strong>More Project Examples</strong></p>
+<ul>
+<li><a href="https://www.instagram.com/hardwareux">hardwareux</a> - A great instagram account showcasing projects built with hardware.</li>
+<li><a href="https://www.creativeapplications.net/tag/arduino/">Creative Applications <em>(tag: arduino)</em></a></li>
+<li><a href="https://create.arduino.cc/projecthub/fredrikstridsman/stringent-the-15-wall-plotter-d965ca">Stringent, the $15 Wall Plotter</a></li>
+<li><a href="https://interactiondesign.sva.edu/projects/in/the-fundamentals-of-physical-computing">SVA Fundamentals of Physical Computing Projects Archive</a><ul>
+<li><a href="https://sunnie-sva-physicalcomputing.tumblr.com/">Sunnie Sang (2013) Maker Blog</a></li>
+</ul>
+</li>
+<li><a href="/pc/learning-arduino/#projects">Arduino Based Projects</a> - Start here for project inspiration.</li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="/pc/learning-electronics/#basic-electronics">Learning Basic Electronics</a></li>
+<li><a href="/pc/learning-arduino">Learning Arduino</a></li>
+<li><a href="http://shop.oreilly.com/product/0636920052678.do">Arduino Prototyping Techniques</a></li>
+<li><a href="https://timrodenbroeker.de/">Tim Rodenbroeker</a> - <a href="https://timrodenbroeker.de/wp-content/uploads/2018/12/tim_rodenbroeker_input_output.pdf">Input / Output Map</a></li>
+<li><a href="/books/#physical-computing">Physical Computing Books</a></li>
+</ul>
 <hr />
 <h2 id="week-8-work-session">Week 8: Work Session<a class="headerlink" href="#week-8-work-session" title="Permanent link">&para;</a></h2>
 <p><em>Oct 14</em></p>
