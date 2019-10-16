@@ -2768,7 +2768,7 @@ P5.js
 <ul>
 <li>Raspberry Pi (3, 4, or Zero W)</li>
 <li>microSD card (You will need a SD card adapter and dongle to plug in the SD card adapter)</li>
-<li>The Raspberry Pi Operating System (<a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Buster Lite</a>)</li>
+<li>The Raspberry Pi Operating System (<a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Buster</a>)</li>
 <li>Micro-USB Power Supply</li>
 <li>HDMI Monitor (Optional*)</li>
 <li>Keyboard &amp; Mouse (Optional)</li>
@@ -2780,11 +2780,11 @@ P5.js
 <p><strong>Process:</strong></p>
 <p>The following are the basic steps for setting up a Raspberry Pi device in most situations. For a more detailed and in depth tutorial read through the steps in the <a href="https://github.com/rjduran/cm-code/tree/master/rpi">Raspberry Pi Setup Tutorial</a>. <em>Note the current instructions in this repo are a little outdated (2018) but should still work if you set it up this way with the latest version of Raspbian.</em> </p>
 <ol>
-<li>Download <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Buster Lite</a></li>
+<li>Download <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Buster</a></li>
 <li>Flash the microSD card using <a href="https://www.balena.io/etcher/">balenaEtcher</a></li>
 <li>Setup and configure system (Connect to WiFi, etc).</li>
 <li>SSH into device from laptop (Or optionally use external display, mouse, and keyboard).</li>
-<li>Install Node.js on device. Git is already installed by default. </li>
+<li>Install Node.js on device. Git is already installed by default with Raspbian Buster Desktop version but not with the Lite version. </li>
 <li>Clone <a href="https://github.com/rjduran/cm-webserver">cm-webserver</a> git repo with Node.js webserver example based on <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi_webserver_websocket.asp">W3 RasPi Websockets Example</a>.</li>
 <li>Start the server on the device. <a href="https://youtu.be/fY-Er-wo7o0">Here's a video of this part of the process</a></li>
 <li>cd into directory <code>cd cm-webserver</code></li>
@@ -2808,6 +2808,7 @@ P5.js
 <li>If you dont know where to start, begin by making a list of questions about possible uses of the technology that matter to you. In what ways will you engage with it? What's clear about it? Whats confusing about it? What do you know about it? Whats mysterious? What's its purpose? Why use it? Then attempt to answer those questions. </li>
 <li>Make a map. Similar to what I shared in class, make a map to tease out some understanding about the technology and it's place in the world. Where do you engage with it? For what purpose? To what end or <a href="https://en.wikipedia.org/wiki/Four_causes">final cause</a>?</li>
 <li>If you found some success using Arduino's and input/output devices, and feel confident enough trying out another platform in this way, consider working through some tutorials about how to make the Raspberry Pi perform similar tasks. Then look at what else it can do that's different from an Arduino. Start simple just as you would on an Arduino. For example, <a href="https://raspberrypihq.com/making-a-led-blink-using-the-raspberry-pi-and-python/">here's a tutorial on a Blink example</a> similar to Blink on Arduino.</li>
+<li>Focus on a feature. For example, make something that uses bluetooth functionality for connectivity and sharing data. Bluetooth speakers, headphones, and smart devices all use bluetooth to share data.</li>
 <li>If you are interested in the deployment of this device as a webserver providing static content and/or connected to hardware, check out the W3 tutorial on <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp">Node.js and Raspberry Pi</a>.</li>
 <li>Look at projects and tutorials!! Use the resources above and the Google machine to find some projects or tutorials that interest you. Follow them and identify what works and what doesn't. What's intriguing about it? How easy or difficult is the project to build? How easy are the instructions to follow? What if you were to write up or document your project in a similar way? How would you do it? </li>
 <li>Working with this tool may require learning something about new programming languages to realize an idea or run a bit of code someone previously made open-source. Try it out and see what happens. Locate a good resource (book, website, series of tutorials) to learn enough of the programming language to understand how to run the code. Something working thw wrong way is better than nothing always. </li>
