@@ -3127,7 +3127,7 @@ title/80005444))</li>
 <h2 id="week-10-no-class">Week 10: No Class<a class="headerlink" href="#week-10-no-class" title="Permanent link">&para;</a></h2>
 <p><em>Oct 28</em></p>
 <ul>
-<li>Classes canceled this week due to weather conditions - https://alerts.colorado.edu/</li>
+<li>Class canceled due to weather conditions - https://alerts.colorado.edu/</li>
 </ul>
 <hr />
 <h2 id="week-11-parametric-design">Week 11: Parametric Design<a class="headerlink" href="#week-11-parametric-design" title="Permanent link">&para;</a></h2>
@@ -3179,7 +3179,14 @@ title/80005444))</li>
 <li><a href="https://www.wired.com/story/new-balance-triplecell-3d-printed-shoe/">New Balance 3D Printed Shoe</a></li>
 <li><a href="http://n-e-r-v-o-u-s.com/projects/sets/kinematics-dress/">Nervous System Kinematics Dress</a></li>
 <li><a href="https://formlabs.com/blog/gillette-uses-3d-printing-to-unlock-consumer-personalization/">Gillette Uses 3D Printing to Unlock Consumer Personalization</a></li>
-<li><a href="https://www.instagram.com/siemencuypers/">Siemen Cuypers</a> - Designer</li>
+<li><a href="https://www.instagram.com/siemencuypers/">Siemen Cuypers</a> - Designer<ul>
+<li><a href="http://www.siemencuypers.com/rhino-to-shopbot-gcode/">GCode + CNC Experiments</a></li>
+<li><a href="https://www.instructables.com/id/Make-Awesome-3D-Geometry-by-Programming-CNC-code/">Instructable Version</a></li>
+</ul>
+</li>
+<li><a href="https://www.instagram.com/dinarakasko/">Diana Kasko</a> - <a href="https://www.instagram.com/p/BQRI8QCgh8d/">Process 1</a>, <a href="https://www.instagram.com/p/BHhm5m8Dfj4/">Process 2</a>, <a href="https://www.instagram.com/p/BLCGCykBLgY/">Process 3</a></li>
+<li><a href="http://www.nendo.jp/en/works/chocolatexture-2/?erelease">nendo chocolates</a></li>
+<li><a href="https://universalfavourite.com.au/projects/complements/">modular chocolates</a></li>
 <li><a href="http://www.fireflyexperiments.com/">Firefly Experiments</a> - Tool for connecting Arduino to Grasshopper. </li>
 <li><a href="https://www.pinterest.com/livearchitect/3d-tiles/">LaN: 3D Tiles</a></li>
 <li><a href="https://www.pinterest.com/livearchitect/3d-tiles/">LaN: Folded</a></li>
@@ -3307,14 +3314,33 @@ title/80005444))</li>
 <li>Make a copy of the revolved form to the right.  </li>
 <li>Repeat until you have several forms</li>
 </ol>
-<p>Example 3: Pipe Generator</p>
-<p>Example 4: Surface Generator</p>
+<p>Example 3: Parametric Pipe Generator</p>
+<ol>
+<li>Draw a curve in the Front viewport. </li>
+<li>Goto Perspective and manipulate the curve using control points (PointsOn). </li>
+<li>Turn on History (Top tool bar) </li>
+<li>Pipe along the curve, setting different radii along the length of the curve. </li>
+<li>Turn off History </li>
+<li>Manipulate the curves to produce different results. When you change a curve you should see the resulting Pipe form change.</li>
+<li>Make a copy of the form to the right.  </li>
+<li>Repeat until you have several forms</li>
+</ol>
+<p>Example 4: Parametric Surface Generator</p>
+<ol>
+<li>Draw a curve on the  XY plane seen from the Top viewport</li>
+<li>Goto Perspective viewport and select curve, use PlanarSrf to create a surface.  </li>
+<li>Select the surface and enter Rebuild. Use a U and V division of 10 for each.  This will create a dense grid of points on the surface, increasing the number of isocurves.  </li>
+<li>History is enabled by default with this type of surface. Manipulate the control points (PointsOn) to make new forms.</li>
+<li>Make a copy of the form to the right.  </li>
+<li>Repeat until you have several forms</li>
+</ol>
 <p>Student Examples from Last Year</p>
 <ul>
 <li><a href="https://medium.com/kmakes/modeling-a-pumpkin-patch-with-rhino-a7fd52a0b9b5">Pumpkin Patch</a> by Karen McClellan</li>
 <li><a href="https://medium.com/@jonascobedo/printing-giants-15cc5935d72f">One WTC 3D Print</a> by Jonas Escobedo</li>
 <li><a href="https://medium.com/@hanshuzhou/my-perfume-bottle-df3a06708787">Perfume Bottle</a> by Hanshu Zhou</li>
 <li><a href="https://medium.com/@sarahcohen47/3d-modeling-more-lipstick-24b51062ecd2">Lipstick</a> by Sarah Cohen</li>
+<li><a href="https://medium.com/@designingdiamond/3d-modeling-is-sweet-176255159a8a">Chocolates</a> by Diamond Alexander</li>
 </ul>
 <p><strong>TAKE A BREAK!</strong></p>
 <p><strong>Intro to Grasshopper (Workshop)</strong></p>
@@ -3363,9 +3389,12 @@ title/80005444))</li>
 <li>Baking geometry (Geometry in Grasshopper -&gt; Rhino)</li>
 <li>Points, Lines, Planes, Volumes</li>
 </ul>
-<p><strong>Vase Builder Example</strong></p>
+<p><strong>Grasshopper Examples</strong></p>
+<p>The following examples are in the <a href="https://github.com/rjduran/cm-design">cm-design/grasshopper</a> folder. </p>
+<p>Example 1: Basic Image Sampler</p>
+<p>Example 2: Basic Attractor</p>
+<p>Example 3: Vase Builder</p>
 <p>This example shows a way to implement a Vase or Vessel type design using Grasshopper. The screenshot shown in the repo is rendered using <a href="https://www.keyshot.com/">Keyshot</a>.</p>
-<p>Repo: <a href="https://github.com/rjduran/cm-design/tree/master/grasshopper/">Vase Builder</a></p>
 <p><strong>Rendering with Keyshot</strong></p>
 <p><a href="https://www.keyshot.com/">Keyshot</a> is an entry level rendering tool. It features drag and drop material, color, lighting, environments, and more. Download the 14 day trial to start experimenting. Go through the <a href="https://www.keyshot.com/resources/learning/tutorials/">Keyshot Tutorials</a> to get a basic understanding of the tool and how to use it.</p>
 <p>Basic Process:</p>
