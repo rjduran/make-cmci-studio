@@ -454,22 +454,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-6-intro-to-ar-foundation" title="Week 6: Intro to AR Foundation" class="md-nav__link">
-    Week 6: Intro to AR Foundation
+  <a href="#week-6-intro-to-c-scripting-in-unity" title="Week 6: Intro to C# Scripting in Unity" class="md-nav__link">
+    Week 6: Intro to C# Scripting in Unity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-7-c-scripting-in-unity" title="Week 7: C# Scripting in Unity" class="md-nav__link">
-    Week 7: C# Scripting in Unity
+  <a href="#week-7-c-scripting-ar-foundation" title="Week 7: C# Scripting / AR Foundation" class="md-nav__link">
+    Week 7: C# Scripting / AR Foundation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-8-c-scripting-in-unity" title="Week 8: C# Scripting in Unity" class="md-nav__link">
-    Week 8: C# Scripting in Unity
+  <a href="#week-8-c-scripting-steam-vr" title="Week 8: C# Scripting / Steam VR" class="md-nav__link">
+    Week 8: C# Scripting / Steam VR
   </a>
   
     <nav class="md-nav">
@@ -1555,22 +1555,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-6-intro-to-ar-foundation" title="Week 6: Intro to AR Foundation" class="md-nav__link">
-    Week 6: Intro to AR Foundation
+  <a href="#week-6-intro-to-c-scripting-in-unity" title="Week 6: Intro to C# Scripting in Unity" class="md-nav__link">
+    Week 6: Intro to C# Scripting in Unity
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-7-c-scripting-in-unity" title="Week 7: C# Scripting in Unity" class="md-nav__link">
-    Week 7: C# Scripting in Unity
+  <a href="#week-7-c-scripting-ar-foundation" title="Week 7: C# Scripting / AR Foundation" class="md-nav__link">
+    Week 7: C# Scripting / AR Foundation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-8-c-scripting-in-unity" title="Week 8: C# Scripting in Unity" class="md-nav__link">
-    Week 8: C# Scripting in Unity
+  <a href="#week-8-c-scripting-steam-vr" title="Week 8: C# Scripting / Steam VR" class="md-nav__link">
+    Week 8: C# Scripting / Steam VR
   </a>
   
     <nav class="md-nav">
@@ -2126,9 +2126,9 @@ After completing a Workout, you will be able to:
 What kind of assets? Each tool we've encountered so far has a set of tools and functions. For instance, Make Human is a parametric character modeling tool. The resulting human figures can be exported and imported into Mixamo for auto-rigging. Cinema 4D as you have seen is primarily used for motion graphics but can be used to animate dynamic 3D objects for use in other workflows such as Unity or Adobe Aero.</p>
 </li>
 <li>
-<p>Visualize your assets in an interesting way using Adobe Aero and/or Unity. </p>
+<p>Visualize your assets in an interesting way using <a href="https://www.adobe.com/products/aero.html">Adobe Aero</a>, <a href="https://www.torch.app/download">Torch AR</a>, and/or Unity. </p>
 <ul>
-<li>If using Adobe Aero, experiment with the built in behaviors (interaction and triggers) functionality to give your AR experience dynamic interactions.</li>
+<li>If using Adobe Aero or Torch AR, experiment with the built in behaviors (interaction and triggers) functionality to give your AR experience dynamic interactions.</li>
 <li>If using Unity, you likely are interested in building a VR expeirence using Steam VR. Follow the <a href="/xr/learning-unity/#unity-steamvr">Unity + SteamVR</a> tutorial to setup a basic VR world and configure object interaction and teleportation. </li>
 </ul>
 </li>
@@ -2144,22 +2144,94 @@ What kind of assets? Each tool we've encountered so far has a set of tools and f
 <p>Share a link to your post with user group <strong>@imd</strong> in Slack channel <strong>#cmstudio</strong>.</p>
 <p><strong><em>Due: Feb 17</em></strong></p>
 <hr />
-<h2 id="week-6-intro-to-ar-foundation">Week 6: Intro to AR Foundation<a class="headerlink" href="#week-6-intro-to-ar-foundation" title="Permanent link">&para;</a></h2>
+<h2 id="week-6-intro-to-c-scripting-in-unity">Week 6: Intro to C# Scripting in Unity<a class="headerlink" href="#week-6-intro-to-c-scripting-in-unity" title="Permanent link">&para;</a></h2>
 <p><em>Feb 17</em></p>
 <p><strong>Discussion</strong></p>
 <ul>
 <li>Project 1 Share</li>
+<li>Intro to AR Foundation next week</li>
+</ul>
+<p><strong>Getting Started</strong></p>
+<ul>
+<li>Download and Install Visual Studio if you haven’t done it yet. Refer to the <a href="/guides/imd-setup-guide/#required-software">required software in the IMD Setup Guide</a>.</li>
+</ul>
+<p><strong>Scripting, Why and How? </strong></p>
+<ul>
+<li>Scripts act as the glue between everything in Unity. They enable custom functionality between objects and systems, handle user input (interactions, touches, etc), allow GameObjects to interact with eachother, enable connectivity with networks, and much more.</li>
+<li>Scripts are simply added to GameObjects or used in combination with other C# files to build functionality through code. Visual Studio is the primary IDE tool for developing (writing code) scripts. </li>
+<li>What is scripting in Unity?<ul>
+<li>A unity "script" is a C# file that contains a Class that inherits from <a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a>. Read about <a href="https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html">Creating and Using Scripts</a>.</li>
+</ul>
+</li>
+<li>What is C#? A programming language. <ul>
+<li>There are many resources online there to learn and practice. You can start with some of the resources below in the workout for this week. </li>
+</ul>
+</li>
+<li>What is in a script? Lets find out!</li>
+</ul>
+<p><strong>Primary References</strong></p>
+<p>These are the primary references for learning about scripting in Unity. Bookmark and refer to as needed. </p>
+<ul>
+<li><a href="https://docs.unity3d.com/ScriptReference/index.html">Unity Scripting API</a></li>
+<li><a href="https://docs.unity3d.com/Manual/ScriptingSection.html">Unity Manual: Scripting</a><ul>
+<li><a href="https://docs.unity3d.com/Manual/ScriptingConcepts.html">Scripting Overview</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Hello World Script</strong></p>
+<ul>
+<li>Build a Unity Project</li>
+<li>Make a Cube GameObject. (What's a GameObject anyway? Lets look at the <a href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a> class in the <a href="https://docs.unity3d.com/ScriptReference/index.html">Unity Scripting API</a>.)</li>
+<li>Make a new script and add it as a Component to your new GameObject. Double click the script in the Assets folder to launch Visual Studio. </li>
+<li>
+<p>Write code in Visual Studio to print to the Unity console from your script. </p>
+<ul>
+<li>Type the following code into your Start() function. Save the script.</li>
+</ul>
+<p><code>Debug.Log("Hello World!!");</code></p>
+</li>
+<li>
+<p>Press Play in Unity</p>
+</li>
+<li>Cool! This should display your log message in the Unity console. </li>
+</ul>
+<!-- 
+**More Examples**
+
+* Now, lets make that object move! - Ref: cm-xr example
+* We can even make it parametric. - Ref: cm-xr example
+
+**C# Programming Concepts**
+
+* Data & Variables
+* Operators
+* Conditionals and if statements
+
+ -->
+
+<p><strong>Where to go for help</strong></p>
+<ul>
+<li><a href="https://forum.unity.com/">Unity Forum</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/unity3d">Stack Overflow for Unity3D</a></li>
+<li>Google it of course!</li>
+</ul>
+<details class="note" open="open"><summary>Looking Outwards [3]: Identifying Functionality in Scripts</summary><ol><li>Identify a technique, behavior, or interaction that is made possible through the use of a script in Unity and write about it. It may help to do this after working through the tutorials in the workout.     </li><li>Using the <a href="ttps://docs.unity3d.com/ScriptReference/index.html">Scripting Reference</a>, locate and point out any relevant classes, properties, and/or methods that enable the functionality you have identified and observe. For example, every object in Unity is a <a href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a> with a <a href="https://docs.unity3d.com/ScriptReference/GameObject-transform.html">transform</a> property and a <a href="https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html">SetActive</a> method. The transform property is used to access the position, rotation, and scale of the object and the SetActive method is used to enable or disable the object. </li></ol><p>Share a link to your post with user group <strong>@imd</strong> in Slack channel <strong>#cmstudio</strong>.</p><p><strong><em>Due: Feb 24</em></strong></p></details><details class="example" open="open"><summary>Workout [3]: Scripting in Unity</summary><p>This week your task is start getting familiar with scripting in Unity by working through the following tutorials.</p><ol><li>Start by working through the <a href="https://learn.unity.com/project/roll-a-ball-tutorial">Roll-a-Ball Tutorial</a>. It's a great starting point to understanding how to use a script for controlling object movement and interaction in a scene. If you have already gone through this tutorial, then proceed to work through the tutorials below or expand upon what you learned in the Roll-a-Ball Tutorial.</li><li>Watch the <a href="https://learn.unity.com/project/beginner-gameplay-scripting">Beginner Scripting</a> video series. You don't need to code everything they explain, just watch in order to better understand something about C# and how the language is used. </li><li>Work though <a href="https://learn.unity.com/tutorial/coding-in-unity-for-the-absolute-beginner">Coding in Unity for the Absolute Beginner</a>. This is a video from 2014 but the concepts are still relevant. </li></ol><p>BONUS! If you are feeling confident enough having gone through the previous tutorials, and you have the time, you are likely ready to work through something more involved. Check out <a href="https://learn.unity.com/project/unit-1-driving-simulation?courseId=5cf96c41edbc2a2ca6e8810f">Unit 1 - Player Control</a> in the course <a href="https://learn.unity.com/course/create-with-code">Create with Code</a>.</p><p>Beginner C# Resources</p><p><em>Note: These resources are listed under <a href="/guides/imd-setup-guide/#learning-resources">IMD Learning Resources</a> &gt; <a href="/guides/imd-setup-guide/#c-c-sharp">C# (C Sharp)</a>.</em></p><ul><li><a href="https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/?view=vs-2019">Visual Studio Tutorials | C#</a></li><li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C# Documentation</a></li><li><a href="https://www.learncs.org/">Learn C#</a></li><li><a href="https://www.w3schools.com/cs/default.asp">W3Schools C# Tutorial (C Sharp)</a></li><li><a href="../dl/The-Csharp-Players-Guide-3rd-Edition.pdf">The C# Players Guide Book</a> (pdf) - This is a great resource for better understanding the C# programming language in general. </li></ul><p>Unity Resources  </p><ul><li><a href="https://learn.unity.com/">learn.unity.com</a>            </li><li><a href="https://docs.unity3d.com/Manual/index.html">Unity Manual</a></li><li><a href="https://docs.unity3d.com/ScriptReference/">Unity Scripting API</a></li></ul></details><hr />
+<h2 id="week-7-c-scripting-ar-foundation">Week 7: C# Scripting / AR Foundation<a class="headerlink" href="#week-7-c-scripting-ar-foundation" title="Permanent link">&para;</a></h2>
+<p><em>Feb 24</em></p>
+<p><strong>Discussion</strong></p>
+<ul>
+<li>Looking Outwards [3]: Identifying Functionality in Scripts - What did you find?</li>
+<li>Workout [3]: Scripting in Unity - What did you make?</li>
 </ul>
 <p><strong>AR Foundation</strong></p>
 <ul>
 <li>AR Foundation = Unity + ARKit 3 (iOS) or ARCore (Android)</li>
-<li>Building a Unity iOS Application (No AR functionality)</li>
+<li>Review Building a Unity iOS Application (No AR functionality)</li>
 <li>Building an AR Foundation Application</li>
 </ul>
 <!-- * Plane Detection with AR Foundation -->
 
-<!--
-
+<!-- 
 AR Foundation
 
 * [AR Foundation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@3.0/manual/index.html)
@@ -2169,27 +2241,15 @@ AR Foundation
 
  -->
 
-<!--
-
-* [Learn Unity's AR Foundation](https://www.youtube.com/watch?v=FGh7f-PaGQc) - Great overview and tutorial of AR Foundation. 
-* [Getting Started With ARFoundation in Unity (ARKit, ARCore)](https://www.youtube.com/watch?v=Ml2UakwRxjk) 
-
--->
-
-<!-- 
-* representations in AR and VR
-* tamagotchi
-* digital pets
-* objects with agency
-* simulations of life - nature of code
--->
-
 <hr />
-<h2 id="week-7-c-scripting-in-unity">Week 7: C# Scripting in Unity<a class="headerlink" href="#week-7-c-scripting-in-unity" title="Permanent link">&para;</a></h2>
-<p><em>Feb 24</em></p>
-<hr />
-<h2 id="week-8-c-scripting-in-unity">Week 8: C# Scripting in Unity<a class="headerlink" href="#week-8-c-scripting-in-unity" title="Permanent link">&para;</a></h2>
+<h2 id="week-8-c-scripting-steam-vr">Week 8: C# Scripting / Steam VR<a class="headerlink" href="#week-8-c-scripting-steam-vr" title="Permanent link">&para;</a></h2>
 <p><em>Mar 2</em></p>
+<p><strong>Discussion</strong></p>
+<ul>
+<li>Looking Outwards [4] - What did you find?</li>
+<li>Workout [4] - What did you make?</li>
+</ul>
+<p><strong>Steam VR</strong></p>
 <h3 id="project-2-ar-foundation-or-steam-vr-experience">Project #2: AR Foundation or Steam VR Experience<a class="headerlink" href="#project-2-ar-foundation-or-steam-vr-experience" title="Permanent link">&para;</a></h3>
 <!--
 
