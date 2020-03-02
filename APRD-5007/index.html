@@ -468,8 +468,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-8-ar-foundation-cont" title="Week 8: AR Foundation Cont." class="md-nav__link">
-    Week 8: AR Foundation Cont.
+  <a href="#week-8-mobile-interaction-ar-foundation-cont" title="Week 8: Mobile Interaction / AR Foundation Cont." class="md-nav__link">
+    Week 8: Mobile Interaction / AR Foundation Cont.
   </a>
   
     <nav class="md-nav">
@@ -1569,8 +1569,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#week-8-ar-foundation-cont" title="Week 8: AR Foundation Cont." class="md-nav__link">
-    Week 8: AR Foundation Cont.
+  <a href="#week-8-mobile-interaction-ar-foundation-cont" title="Week 8: Mobile Interaction / AR Foundation Cont." class="md-nav__link">
+    Week 8: Mobile Interaction / AR Foundation Cont.
   </a>
   
     <nav class="md-nav">
@@ -2275,7 +2275,7 @@ What kind of assets? Each tool we've encountered so far has a set of tools and f
 <li><a href="https://blogs.unity3d.com/2019/06/06/ar-foundation-support-for-arkit-3/">AR Foundation Support for ARKit3</a></li>
 </ul>
 <details class="note" open="open"><summary>Looking Outwards [4]: Understanding AR Foundation</summary><ol><li><p>Review the following resources to better understand the current state and future of AR Foundation.</p><ul><li><a href="https://blogs.unity3d.com/2018/12/18/unitys-handheld-ar-ecosystem-ar-foundation-arcore-and-arkit/">Unity Blog: AR Foundation Overview</a></li><li><a href="https://www.youtube.com/watch?v=FGh7f-PaGQc">Learn Unity's AR Foundation</a> - Great overview and tutorial of AR Foundation. Walks through a basic project showing how to work with both Android and iOS workflows. Just watch the first 6 mins to start.  </li><li><a href="https://youtu.be/UkBXOff8Efo">AR Foundation framework: Product roadmap - Unite Copenhagen 2019</a> - Watch the first 35 mins.            <ul><li><a href="https://youtu.be/UkBXOff8Efo?t=605">AR Foundation Architecture</a></li><li><a href="https://youtu.be/UkBXOff8Efo?t=779">Our Journey So Far</a></li><li><a href="https://youtu.be/UkBXOff8Efo?t=937">Base AR Features</a> (<a href="../imgs/BaseARFoundationFeatures.png">Screenshot</a>)</li><li><a href="https://youtu.be/UkBXOff8Efo?t=1431">Supported Features</a> (<a href="../imgs/SupportedARFoundationFeatures.png">Screenshot</a>)  </li></ul></li><li><a href="https://blogs.unity3d.com/2019/06/06/ar-foundation-support-for-arkit-3/">AR Foundation Support for ARKit3</a> - Great overview of ARKit 3 supported features.   </li></ul></li><li><p>Based on your understanding of the AR Foundation package, what design opportunities do you envision given features such as plane tracking, image and object tracking, light estimation, and the more recent features supported by AR Kit 3 such as face tracking, motion capture, and people occulsion?</p></li></ol><p>Share a link to your post with user group <strong>@imd</strong> in Slack channel <strong>#cmstudio</strong>.</p><p><strong><em>Due: Mar 2</em></strong></p></details><details class="example" open="open"><summary>Workout [4]: Building AR Foundation Applications for iOS</summary><p>Your task this week is to build and run one or more AR Foundation applications on your iOS device. You will be following the same process we went through in class but for the AR Foundation sample projects. </p><p>After getting comfortable with this process, continue working through the optional tutorials below as a way to improve your understanding of scripting and Unity in general. <strong>I highly recommend</strong> working your way through the Create with Code units and lessons.  </p><p><strong>Building the AR Foundation Samples</strong></p><ol><li>Download the <a href="https://github.com/Unity-Technologies/arfoundation-samples">AR Foundation Samples</a> from the Github repo. Extract the zip file and rename your folder "arfoundation-samples". <em>Note: Github repos downloaded as zip will always have the "-master" or branch name on the end of the repo when extracted</em>.</li><li>Open Unity Hub and "Add" the "arfoundation-samples" project folder. Use a recent version of Unity to build from. Unity 2019.3 works for me. Note: You will have to confirm upgrading the database if using 2019.3. Click OK and wait. You should see the Unity editor open up in a new scene when complete. </li><li>Change the Build Platform to iOS in the Build Settings. <em>Note: This will take a few mins to complete. Be patient.</em><ul><li>Under File &gt; Build Settings, select iOS as the Platform and Click Switch Platform. Unity will change which platform to build to and will display a small Unity icon next to the current build platform when complete.</li></ul></li><li>Configure Player Settings (Build Settings)<ul><li>Click Player Settings to bring up the build options. </li></ul></li><li>Change the following build settings under Player &gt; "Other Settings"<ul><li>Bundle Identifier: studio.cmci.make.ARFoundation</li><li>Automatically Sign: Checked (Note: This will need to be adjusted in Xcode)</li><li>Target minimum iOS version: 13.1 (Note: You need to make sure your device is up to date for AR Kit to work.)</li><li>Architecture: ARM64</li><li>Camera Usage Description: Enable to use AR Foundation</li></ul></li><li>Click the checkbox for scene file: Scenes/SimpleAR/SimpleAR</li><li>Click Build to save an Xcode project. Be sure to make a folder called "Builds" next to your Assets folder, not inside of it, to store all your builds. Note: This process takes a few minutes to complete a build. </li><li>Launch Xcode</li><li>Open the Unity-iPhone.xcodeproj contained in the build project folder you just saved. </li><li>Select the Unity-iPhone target to configure the following details. <em>Note that the Display Name is what will show up as the app name on your device.</em><ul><li>General:<ul><li>Bundle Identifier: studio.cmci.make.ARFoundation.SimpleAR</li><li>Display Name: SimpleAR</li></ul></li><li>Signing &amp; Capabilities:<ul><li>Check Automatically manage signing</li></ul></li></ul></li><li>Connect device via USB cable and press Play button to compile and run on the device. Press stop button to stop the application. Note: The app is installed on your device and can me removed just like any app.</li></ol><p><strong>NOTE: I am working on putting this entire process into a document and video format to hopefully make it easier to follow.</strong></p><p><strong>Optional Tutorials</strong></p><p>If you were successiful last week with Unit 1, proceed to work through <a href="https://learn.unity.com/project/unit-2-basic-gameplay?courseId=5cf96c41edbc2a2ca6e8810f">Unit 2 - Basic Gameplay</a> in the course <a href="https://learn.unity.com/course/create-with-code">Create with Code</a>. This unit walks step-by-step through building a simple top-down game where you throw food at hungry animals and another where you play fetch with a dog. Your goal moving forward will be to apply the skills learned in asset design and scripting to a project and final project.</p></details><hr />
-<h2 id="week-8-ar-foundation-cont">Week 8: AR Foundation Cont.<a class="headerlink" href="#week-8-ar-foundation-cont" title="Permanent link">&para;</a></h2>
+<h2 id="week-8-mobile-interaction-ar-foundation-cont">Week 8: Mobile Interaction / AR Foundation Cont.<a class="headerlink" href="#week-8-mobile-interaction-ar-foundation-cont" title="Permanent link">&para;</a></h2>
 <p><em>Mar 2</em></p>
 <p><strong>Discussion</strong></p>
 <ul>
@@ -2283,33 +2283,98 @@ What kind of assets? Each tool we've encountered so far has a set of tools and f
 <li>Workout [4]: Building AR Foundation Applications for iOS - What did you make?</li>
 <li>Questions - Unity, Scripting, Visual Studio, Docs, C# Language, etc</li>
 </ul>
+<p><strong>Working with Mobile Inputs</strong></p>
+<p>Learning how to use mobile inputs is important for building mobile AR experiences. How does a user interact with your application on a mobile device and how is it different than another device like a keyboard or VR controller? Lets look at a few examples of user interaction that are unique to mobile devices. </p>
+<ul>
+<li>Touch Interaction<ul>
+<li>Touch Pressure Example</li>
+<li>Joystick Example</li>
+</ul>
+</li>
+<li>Device Movement<ul>
+<li>Accelerometer Example</li>
+</ul>
+</li>
+</ul>
 <p><strong>AR Foundation</strong></p>
 <ul>
-<li>Look at examples</li>
-<li>XR Interaction Toolkit</li>
-<li>MARS</li>
+<li>Lets explore the sample files a bit. Lets look at what they do and how they work at a high level. </li>
+<li>Learn XR: Dillmer Tutorials - His website launching soon.</li>
+<li>The Future:<ul>
+<li>XR Interaction Toolkit (In preview)</li>
+<li>Project MARS (Still in development)</li>
 </ul>
-<!-- 
-**Examples**
-
-Touch interaction
-  * Touches examples
-  * Dpad example
-  * 
-Device movement interactions
-
-AR Foundation + Touch Interaction
-Object Placement
-
-Loading FBX into Unity to display in AR Foundation App
-
--->
-
+</li>
+<li><a href="https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/">Unity XR platform updates - Unity Technologies</a></li>
+<li>Project MARS: What you need to know - Unite Copenhagen 2019 / <a href="../dl/projectmarswhatyouneedtoknowunitecph2019.pdf">Slides</a></li>
+</ul>
 <h3 id="project-2-build-a-unity-based-mobile-app">Project #2: Build a Unity Based Mobile App<a class="headerlink" href="#project-2-build-a-unity-based-mobile-app" title="Permanent link">&para;</a></h3>
+<p>Your objective this week is to create a Unity based mobile app that runs on an iOS device. For the time being you do not need to make it capable of AR with AR Foundation. We will continue to explore how to design for AR and VR in the weeks ahead. </p>
+<ol>
+<li>
+<p>Create a Unity scene and place objects or assets into it. </p>
+<ul>
+<li>At least 1 animated avatar or character or 3D object in the scene.</li>
+<li>At least 2 environmental assets to make it visually interesting. Experiment with it. </li>
+</ul>
+<p>Tip: Look back at previous resources for ways to make and animate characters or objects. Adapt any lessons or techniques learned by watching the Unity Create with Code tutorials or other tutorials that explore ways to visually enhance Unity scenes. </p>
+</li>
+<li>
+<p>Use an interaction method such as touch or device orientation to cause a change in the scene. </p>
+<p>If using touch interaction, you could cause a change in the character or object's transform (position, scale, rotation), appearance (color), visibility (active or not active). Similarily, if using the accelerometer, you could cause a change to a game object in the based on the orientation of the device.</p>
+<p>Tip: This part will require you to write at least one C# script to handle the interaction(s). Look at the examples on interaction above for ways to do this. </p>
+</li>
+<li>
+<p>Build your Unity project for iOS and run on a mobile device. </p>
+<ul>
+<li>Create a build for your scene.</li>
+<li>Compile using Xcode and run on your device. </li>
+</ul>
+<p>Tip: Refer to the notes and workout from last week for how to do this. </p>
+</li>
+<li>
+<p>Capture video recording on your device and include in documentation. </p>
+</li>
+</ol>
+<p><strong>Deliverable:</strong></p>
+<p>Documentation in the form of a blog post of your creative process and experience. </p>
+<ul>
+<li>What were your goals and outcomes?    </li>
+<li>Use screenshots, screen captures, renderings, gifs, Sketchfab viewers (for sharing 3D content), Github repos, and video. </li>
+<li>Include links to any tutorials, videos, and learning resources used.</li>
+<li>Be prepared to give a short presentation of your project next class. </li>
+</ul>
+<p>Share a link to your post with user group <strong>@imd</strong> in Slack channel <strong>#cmstudio</strong>.</p>
 <p><strong><em>Due: Mar 9</em></strong></p>
 <hr />
 <h2 id="week-9-ui-and-ux-of-xr">Week 9: UI and UX of XR<a class="headerlink" href="#week-9-ui-and-ux-of-xr" title="Permanent link">&para;</a></h2>
 <p><em>Mar 9</em></p>
+<p><strong>Discussion</strong></p>
+<ul>
+<li>Project 2 Share</li>
+</ul>
+<!-- 
+**XR Design Theory**
+
+* [XR Design Theory and Practice for Digital Eyewear](https://www.youtube.com/watch?v=4o__z7aPlMw)
+
+
+**Designing for Mobile AR**
+
+This is a great series of articles by Bushra Mahmood from Unity.
+
+* A Quick Guide to Designing for Augmented Reality on Mobile (Part 1)
+* A Quick Guide to Designing for Augmented Reality on Mobile (Part 2)
+* A Quick Guide to Designing for Augmented Reality on Mobile (Part 3)
+* A Quick Guide to Designing for Augmented Reality on Mobile (Part 4)
+* Context-First Design for Augmented Reality
+* A designer's guide to hardware and software for mobile AR
+
+HUDS + GUIS
+https://www.hudsandguis.com/
+
+-->
+
 <hr />
 <h2 id="week-10-steamvr">Week 10: SteamVR<a class="headerlink" href="#week-10-steamvr" title="Permanent link">&para;</a></h2>
 <p><em>Mar 16</em></p>
