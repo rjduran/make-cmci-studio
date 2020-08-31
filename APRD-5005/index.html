@@ -1757,7 +1757,7 @@ This repo contains various types of files used each week of the course. It's con
 <h3 id="week-1-overview">Week 1: Overview</h3>
 <p><em>Aug 28 (Friday)</em> | <em>Location: In Person + <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
 <ul>
-<li>Intros / Course Overview (Slides)</li>
+<li>Intros / Course Overview (<a href="/dl/slides/critical-making-week-1-F2020.pdf">Slides</a>)</li>
 <li><a href="https://forms.gle/vEzZ4xu1taELmpeD9">CM1 Student Questionnaire</a></li>
 <li>Making "making" a practice (aka Dailies, Everydays)    <ul>
 <li><a href="http://number27.org/works">Jonathan Harris</a> - <a href="http://number27.org/today">Today</a> - <a href="http://cowbird.com/">Cowbird</a></li>
@@ -1795,7 +1795,7 @@ This repo contains various types of files used each week of the course. It's con
 </ol>
 <p>Resources</p>
 <ul>
-<li><a href="https://processing.org/reference/">Processing Reference</a></li>
+<li><a href="https://processing.org/reference/">Processing Language Reference</a></li>
 <li><a href="http://learningprocessing.com/">Learning Processing</a></li>
 <li><a href="https://www.amazon.com/gp/product/0596514557">Visualizing Data: Exploring and Explaining Data with the Processing Environment</a></li>
 </ul>
@@ -1863,29 +1863,140 @@ This repo contains various types of files used each week of the course. It's con
 <p><em>Aug 31</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
 <p>Today in class we will be working on setting up software and becoming familiar with some of the tools used for development.</p>
 <ul>
-<li>Text Editors</li>
-<li>Development Environment</li>
-<li>Hello Terminal</li>
-<li>Install Node.js</li>
-<li>Make a Sandbox</li>
-<li>Github Workshop</li>
-<li>Version Control <ul>
-<li>Install Git </li>
+<li>Questions</li>
+<li><a href="#assignment-2-everyday-project">Assignment #2</a> begins today</li>
+<li>Class Format over Zoom<ul>
+<li>Break out rooms?</li>
+</ul>
+</li>
+<li>Setting up your development environment<ul>
+<li>What's that and why do we need it?</li>
+<li>What does a development environment look like?</li>
+<li>IDE's vs Text Editors,  working <code>code</code> folder, Terminal, Node.js, NPM, Version Control. </li>
+<li>The combination of all these tools is what I refer to as a "sandbox" or local development environment.</li>
+</ul>
+</li>
+<li>Terminal Workshop<ul>
+<li>Hello Terminal<ul>
+<li>Basic folder navigation and file creation</li>
+</ul>
+</li>
+<li>Showing hidden files on your system</li>
+<li>"dot" files (aka a file with a dot or period at the beginning of it's filename is a hidden file)  </li>
+<li>Install Git</li>
+</ul>
+</li>
+<li>Github Workshop<ul>
+<li>Version Control (aka a time machine for code/data)</li>
 <li>Setup Github account</li>
+<li>Create your first repo</li>
 <li>Markdown</li>
 </ul>
 </li>
+<li>Setup local development environment<ul>
+<li><a href="/repos/#how-to-build-a-sandbox">Make a Sandbox</a> (aka local dev server environment)</li>
+<li>Play in the sandbox by making a basic HTML webpage and serving it up</li>
+</ul>
+</li>
 <li>Code: The Hidden Language of Computer Hardware and Software</li>
-<li>ASCII vs Binary</li>
+<li><a href="https://www.nayuki.io/page/what-are-binary-and-text-files">ASCII vs Binary Files</a><ul>
+<li>ASCII - Data for a human to read/write</li>
+<li>Binary - Data for a computer to read/write</li>
+</ul>
+</li>
+</ul>
+<p><strong>Development Environment</strong></p>
+<p>Lets get started by setting up a development environment. The most basic things you need for any web development tasks are a text editor and a browser like Chrome, Safari, or Firefox. Other tools such as the Terminal, Git, Github, and Node.js enable you to work with all sorts of libraries and frameworks, collaborate with others, and quickly prototype new ideas. All these tools come together under the idea of running a "local development server" or localhost on your machine. We will be setting up all these parts and will utilize them in different ways over the course of the semester. </p>
+<p>If you are curious about the history of electronics, computers, computer science, programming, and the Internet, check out the <a href="/dev/histories">Histories</a> section. I strongly advise you to start getting familiar with the various histories and technological underpinnings of the technologies you use every day. Remember, it's also about building awareness and understanding about the systems that run our world. These resources are meant to work through at your own speed and as you begin to ask deeper questions about why something works and how something works.</p>
+<p>I also highly recommend the book <a href="https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319">Code: The Hidden Language of Computer Hardware and Software</a> by Charles Petzold. It is a foundational text on why computers are the way they are and how they work, beginning with code. </p>
+<p><strong>Text Editors</strong></p>
+<ul>
+<li>What is a text editor?</li>
+<li>What is it's purpose?</li>
+<li>How is it useful for development?</li>
+</ul>
+<p>When it comes to web development or software development work, you need a text editor capable of working with ASCII data and rich in features supporting development tasks. My editor of choice is currently <a href="https://code.visualstudio.com/">Visual Studio Code (VSCode)</a>. </p>
+<p><em>Will Microsoft Word, Google Docs, or Pages work? No! These are word processing applications that deal primarily with binary data because in addition to the actual text information stored in a .doc file, it encapsulates data such as font and formatting. Don't use these editors for this kind of work. You will be sad.</em></p>
+<p><strong>Terminal Workshop</strong></p>
+<ul>
+<li>What is the Terminal?</li>
+<li>What is it's purpose?</li>
+<li>How is it useful for development?</li>
+</ul>
+<p><strong>Goals:</strong></p>
+<ol>
+<li>Get familiar with the terminal by creating and manipulating files and folders on your system. </li>
+<li>Set up git to be able to use version control to manage projects on Github. </li>
+</ol>
+<p><strong>Terminal 101</strong></p>
+<ul>
+<li>Location on MacOS: <em>Applications/Utilities/Terminal.app</em></li>
+<li>For the Windows users: <a href="https://cmder.net/">Cmder</a> is a Terminal emulator that works in a similar way to the mac terminal.</li>
+<li><a href="/dev/learning-terminal">How to display hidden files on MacOS</a></li>
+<li>Customize your Terminal in Terminal &gt; Preferences. It helps to make the text larger on most screens.</li>
+<li>Common commands: <code>cd, ls, mkdir, rmdir, rm, mv, cp, pwd, man, touch</code>. Think of all these commands as tiny applications that have no GUI. They are very old and have been around since the start of Unix based systems (Read this to learn more: <a href="https://www.macworld.com/article/1154036/software-utilities/osxorigins.html">Looking back at OS X's origins</a>). Look at <a href="https://learntocodewith.me/command-line/unix-command-cheat-sheet/">MacOS/Linux/Unix Command Line Cheat Sheet</a> to see more information about common commands.</li>
+<li>Working with directories and files:<ul>
+<li><code>cd &lt;folder&gt;</code> - Goto into a folder</li>
+<li><code>cd ..</code> - Go up one level</li>
+<li><code>cd ../&lt;folder&gt;</code> - Go up one level (to parent folder) and into a child folder</li>
+<li><code>cd ../..</code> - Go up two levels etc</li>
+<li>Tab completion - When you start typing in a terminal you can hit tab to complete the command if the file or folder you are going to use is available. If you hit Tab twice, you will see the contents of a folder.</li>
+</ul>
+</li>
+<li>Getting out of or killing a process that is running in Terminal: <code>ctrl + c</code></li>
+</ul>
+<p><strong>Install Git</strong></p>
+<p>You will likely not have Git installed on your machine by default. You will know if you have it or not when you type <code>git</code> into the Terminal. If you do have it installed you will see information about how to use it. If you don't, you will see the output "command not found".</p>
+<p>You may be prompted to install XCode Developer Tools when installing git. Accept the install and proceed. You have two options to install git: Install the XCode Developer tools (easy way) or download the installer from <a href="https://git-scm.com/">git-scm</a>.</p>
+<p>After installing it the <code>git</code> command should work in the Terminal. This is essential to working with Github.</p>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="/dev/learning-terminal">Learning Terminal</a> - Cheetsheets and more!</li>
+<li><a href="/dev/learning-git">Learning Git</a></li>
+<li><a href="http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/">How to use Terminal on Mac</a>, <a href="https://gist.github.com/jirutka/99d57c82fa8981f56fb5">How to use a Terminal on Windows</a></li>
+<li><a href="https://www.git-tower.com/blog/command-line-cheat-sheet/">Command Line Cheat Sheet by git-tower</a> - This one is great for both git and terminal commands! </li>
+</ul>
+<p><strong>Github Workshop</strong></p>
+<p><strong>Goals:</strong></p>
+<ol>
+<li>Setup a Github account</li>
+<li>Create your first repository</li>
+<li>Publish some code to it</li>
+</ol>
+<p><strong>How to Use Github</strong></p>
+<ol>
+<li><a href="https://github.com/">Sign up for a Github account</a>. Choose a username wisely. You might just be "Internet famous" someday. (<em>Stuck on choosing a username? Read this. <a href="https://athityakumar.github.io/blog/posts/A_Tale_of_GitHub_Usernames/">A Tale of Github Usernames</a></em>)</li>
+<li><a href="https://help.github.com/en/articles/create-a-repo">Create a hello-world repo on Github</a>. If you check the box to add a README file it will include a README.md file in the repo. This is the main information file shown when you goto the repo URL<ul>
+<li>Markdown = text file with special syntax that gets converted into HTML. Review <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a>.  </li>
+<li><a href="https://gist.github.com/rxaviers/7360908">Complete list of github markdown emoji markup</a></li>
+</ul>
+</li>
+<li>Clone your repo using the terminal. Doing this will download a copy of your repository onto your machine.   <ul>
+<li>Clone Repo: <code>git clone &lt;repo url&gt;</code>. For Example, <code>git clone git@github.com:rjduran/cm-sandbox.git</code>. Note the URL and its use of "git" or "https". Use "https" to start. You need to go through the Github tutorial below in step #4 to connect to Github via SSH.</li>
+<li>Open VSCode and add the cloned folder to the workspace</li>
+<li>Make some changes to your README.md file using VSCode</li>
+<li>Stage the changes: <code>git add .</code> or <code>git add README.md</code></li>
+<li>Commit the changes: <code>git commit -m "my message describing changes"</code></li>
+<li>Push the changes: <code>git push</code></li>
+<li>You will be asked for your username and password when attempting to push changes to your repo at this stage. </li>
+<li>Once the changes are uploaded you will see the changes on the Github page for the repo. Yay! Good times! Success!</li>
+</ul>
+</li>
+<li>Pro tip: After setting up your Github account, read through <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Connecting to Github with SSH</a> to setup your system to connect securely to Github and not require you to enter your username and password credentials each time you push changes.</li>
+</ol>
+<p><strong>Sandbox Time!</strong></p>
+<ul>
+<li><a href="/repos/#how-to-build-a-sandbox">Make a Sandbox</a> (aka local dev server environment)</li>
+<li>Play in the sandbox by making a basic HTML webpage and serving it up.</li>
 </ul>
 <h4 id="assignment-2-everyday-project">Assignment 2: Everyday Project</h4>
-<p>Objective: Make something and capture a digital representation of it each day for the next 2 weeks. </p>
+<p>Objective: Make something and capture a digital representation of it each day for the next 2 weeks. You should have at a minimum 14 objects.</p>
 <p>Thoughts on how to accomplish this:</p>
 <ul>
 <li>Choose any tool(s) at your disposal. </li>
 <li>Choose any theme or topic. </li>
 <li>Date Range: Monday Aug 31 to Monday Sept 14</li>
-<li>Decide how you will document your project. For example, Instagram, blog post, a single image, a video, etc. Consider how the result will travel digitally.</li>
+<li>Decide how you will document your project. For example, Instagram, blog post, a single image, a document, a Github repo commit, a video, etc. Consider how the result will travel digitally.</li>
 <li>Refer to the projects and practices you observed from last week.</li>
 </ul>
 <p>Questions:</p>
@@ -1894,7 +2005,7 @@ This repo contains various types of files used each week of the course. It's con
 <li>What new thing has peaked your interest and will you use to make something every day?</li>
 </ul>
 <p><strong>Deliverable:</strong></p>
-<p>Submit a blog post documenting your project process and outcome. </p>
+<p>Submit a blog post documenting your project process and outcome in Slack <strong>#cmstudio</strong>. </p>
 <p><strong><em>Due: Sept 14</em></strong></p>
 <hr />
 <h3 id="week-3-labor-day">Week 3: Labor Day</h3>
@@ -1904,6 +2015,42 @@ This repo contains various types of files used each week of the course. It's con
 <h2 id="phase-2-the-modern-web">Phase 2: The Modern Web</h2>
 <h3 id="week-4-intro-to-web-development">Week 4: Intro to Web Development</h3>
 <p><em>Sept 14</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
+<!-- 
+**The World Wide Web**
+
+* What is the World Wide Web, where did it come from, and what is its purpose?
+
+    **The purpose of building websites and web applications is to make an idea accessible to one or more people.**
+
+* How does it work?
+* What is it made of?
+
+**The Industry**
+
+* What do web developers do?
+* What do web developers need to know?
+* How do you learn web development skills? (HINT: Practice, practice, practice)
+
+**Languages**
+
+In the resources here you can find some learning pathways for building skills with these tools. Make time to read through the basics of all the languages and try things out. Most importantly, seek to apply the skills you are learning towards projects.
+
+* [HTML](/dev/#hypertext-markup-language-html) / [Learning HTML & CSS](/dev/learning-html-css)
+* [CSS](/dev/#cascading-style-sheets-css)
+* [Javascript](/dev/#javascript-js) / [Learning Javascript](/dev/learning-js)
+
+
+**Browsers**
+
+Browser wars - look for reference about this
+
+Look for reference about all the data available in the browser - what do big tech companies get from your browser?
+
+* Chrome Browser
+    * Chrome Dev Tools (Inspector for debugging). _Access via: View > Developer > Developer Tools_ within Chrome.
+
+ -->
+
 <hr />
 <h3 id="week-5-web-applications-frameworks">Week 5: Web Applications &amp; Frameworks</h3>
 <p><em>Sept 21</em> | <em>Location: In Person + <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>

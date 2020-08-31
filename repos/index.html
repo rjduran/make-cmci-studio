@@ -922,13 +922,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#cm-repos" class="md-nav__link">
-    CM Repos
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1113,13 +1106,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#cm-repos" class="md-nav__link">
-    CM Repos
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1170,17 +1156,15 @@ git push -u origin master
 
 <p>You can read more about changing remotes between HTTPS and SSH and vice versa <a href="https://help.github.com/articles/changing-a-remote-s-url/">here</a>.</p>
 <h2 id="how-to-build-a-sandbox">How to Build a Sandbox</h2>
-<p><em>This short tutorial is adapted from <a href="/archive/f18s19/fall-2018/#assignment-2-build-a-sandbox">Assignment 2: Build a Sandbox, Fall 2018</a>.</em></p>
 <p>Create a local development workspace (aka <a href="https://www.quora.com/What-is-Sandbox-1">sandbox</a>) to prototype with HTML, CSS, and JS. By the end of this you should have something that looks like my <a href="https://github.com/rjduran/cm-sandbox">cm-sandbox</a> repo.</p>
 <p>What is the purpose of this?</p>
 <p>To become familiar with the file types, languages, and how they work together. At a fundamental level this approach to experimentation establishes good development practices and efficient workflows. It also supports hands-on learning, which is the only way to improve as a programmer. As a programmer you want to be in control of your code, tools, workflow, and system. (<a href="https://www.youtube.com/watch?v=qDrDUmuUBTo">Don't let the computer control you.</a>).</p>
-<p>!!! tip
-    Pro Tip: Setup a working directory for all programming projects (For Example, <code>/Users/username/code</code>). This directory then becomes your goto location for anything having to do with code, programming, cloning repos from github, experimenting with new tools and software, and more. This is precisely how I organize my system.  </p>
+<p>Pro Tip: Setup a working directory for all programming projects (For Example, <code>/Users/username/code</code>). This directory then becomes your goto location for anything having to do with code, programming, cloning repos from github, experimenting with new tools and software, and more. This is precisely how I organize my system.  </p>
 <ol>
 <li>Download and install <a href="https://nodejs.org/en/download/">Node.js</a> and <a href="https://www.npmjs.com/package/live-server">live-server</a>.<ul>
 <li>Verify node and npm are installed via Terminal: <code>node -v &amp;&amp; npm -v</code>. You should see two version numbers matching what you installed.</li>
 <li>Install live-server globally: <code>npm install -g live-server</code></li>
-<li>If you have done all this correctly you should be able to download a zip of (or clone the) <a href="https://github.com/rjduran/cm-code">cm-code</a> git repo and run the <a href="https://github.com/rjduran/cm-code/tree/master/web-dev/hello-live-server">hello-live-server</a> example via Terminal.    </li>
+<li>If you have done all this correctly you should be able to type <code>live-server</code> in your terminal and start a server at the default address http://127.0.0.1:8080 from your current folder.    </li>
 </ul>
 </li>
 <li>Create a <a href="https://github.com/">Github</a> account and <a href="https://help.github.com/articles/create-a-repo/">make a repository</a> for your web project (as demonstrated in class). You can name the repo anything you want. For example, "cm-sandbox".</li>
@@ -1192,7 +1176,7 @@ git push -u origin master
 <li>script.js</li>
 </ul>
 </li>
-<li>Launch your local development server (<code>live-server</code>) via Terminal and code editor of choice (ex. Atom or VSCode) and make some changes to the files in your web project. Remember the purpose of a local development environment is to "simulate" how the code will perform when uploaded to another web server. Open a browser and goto the url shown. It will be http://localhost:8000 or something similar.<ul>
+<li>Launch your local development server (<code>live-server</code>) via Terminal and code editor of choice (ex. VSCode) and make some changes to the files in your web project. Remember the purpose of a local development environment is to "simulate" how the code will perform when uploaded to another web server. Open a browser and goto the url shown. It will be http://localhost:8080 or something similar.<ul>
 <li>Create a basic html page using validated markup (Hint: Using a tool like <a href="https://www.freeformatter.com/html-validator.html">FreeFormatter</a>, check that your code works as expected.)</li>
 <li>Add some css selectors to your style.css file.</li>
 <li>Add some basic Javascript functionality to your script.js file.</li>
@@ -1200,12 +1184,6 @@ git push -u origin master
 </li>
 <li>Commit the file changes to your Github repo. You should see the changes in the Github repo summary.</li>
 </ol>
-<h2 id="cm-repos">CM Repos</h2>
-<ul>
-<li><a href="https://github.com/rjduran/cm-code">cm-code</a> - Example code for various critical making topics</li>
-<li><a href="https://github.com/rjduran/cm-tools">cm-tools</a> - Setup guides for various tools</li>
-<li><a href="https://github.com/rjduran/cm-xr">cm-xr</a> - Examples in XR (VR / MR / AR)</li>
-</ul>
                 
               
               
