@@ -1191,26 +1191,17 @@
                 <p>This section contains resources for learning how to use the <a href="https://git-scm.com/">Git</a> version control system.</p>
 <p><em>Note this is a living document and is constantly being updated. Some things may come and go over time.</em></p>
 <h2 id="beginner">Beginner</h2>
-<!-- ### How to Setup Git
-
-* You will likely not have Git installed on your machine. You will know if you have it or not when you type `git` into the Terminal. You may be prompted to install XCode Developer Tools in doing so. 
-* You have two options to install git: 
-    * Install the XCode Developer tools (easy way)
-    * Download the installer from [git-scm](https://git-scm.com/)
-* After installing it the `git` command should work in the Terminal.
-
-### How to use Github
-
-* Make Repo on Github. If you check the box to add a README file it will include a README.md file in the repo. This is the main information file shown when you goto the repo URL. Markdown = text file with special syntax that gets converted into HTML. Review [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).    
-* Clone Repo: `git clone <repo url>`. For Example, `git clone git@github.com:rjduran/cm-sandbox.git`. Note the URL and its use of "git" or "https". Use "https" to start. You need to go through the Github tutorial below to connect to Github via SSH.
-* Make some changes: (Using text editor of some kind - Atom, vi, TextEdit, notepad)
-* Stage the changes: `git add index.html`
-* Commit the changes: `git commit -m "my message describing changes"`
-* Push the changes: ``git push``
-* _Pro tip: After setting up your Github account, read through [Connecting to Github with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) to setup your system to connect securely to Github and not require you to enter your username and password credentials each time you push changes._    -->
-
-<!-- ### Resources -->
-
+<p><a href="https://docs.github.com/en/github/using-git/ignoring-files">How to setup a global ignore file</a> to ignore system files like .DS_Store (macOS). The alternative is to specify ignored files in .gitignore for a local repository.</p>
+<ol>
+<li>
+<p>Create ignore file with .DS_Store in it.
+<code>echo .DS_Store &gt;&gt; ~/.gitignore_global</code></p>
+</li>
+<li>
+<p>Configure git to use the ignore file.
+<code>git config --global core.excludesfile ~/.gitignore_global</code></p>
+</li>
+</ol>
 <h3 id="git-github">Git &amp; GitHub</h3>
 <ul>
 <li><a href="https://guides.github.com/activities/hello-world/">Github Tutorial (10 mins)</a> - Non command line (Terminal) tutorial.</li>
