@@ -2170,7 +2170,7 @@ Notable examples of Front-End development
 </ul>
 <p>What IS the composition of a webpage?</p>
 <p>At a basic level all you need is a single index.html file with <code>&lt;html&gt;...&lt;/html&gt;</code> and enclosing <code>&lt;body&gt;...&lt;/body&gt;</code> tag to render a webpage. All the CSS and JS you may have can exist inside the same file embedded within <code>&lt;style&gt;...&lt;/style&gt;</code> and <code>&lt;script&gt;...&lt;/script&gt;</code> elements. It only becomes important to separate the 3 types of code when a project becomes too large to manage within a single file, which is very common. Best practices, modularity, and the need for regular maintenance have led developers and designers towards a current approach of establishing and using <a href="/dev/#coding-standards">style guides or coding standards</a>.</p>
-<p><strong>Exercise 1: Hello HTML</strong><br></p>
+<p><strong>Exercise 1: Hello HTML</strong></p>
 <p><strong>Goals:</strong></p>
 <ol>
 <li>Understand how to make a basic HTML document using a text editor (VS Code)</li>
@@ -2183,54 +2183,53 @@ Notable examples of Front-End development
 <li>Open VS Code and add the "hello-world" folder to your workspace. </li>
 <li>Using VS Code make a new file called index.html in your project folder.</li>
 <li>Open Chrome and open the index.html file. You should see a blank page. This is your document without any content. </li>
-<li>In VS Code, add the html, head, and body tags into the document. <ul>
+<li>In your index.html file, add the html, head, and body tags into the document. <ul>
 <li>What are these tags used for?</li>
 </ul>
 </li>
-<li>In VS Code, add a few elements such as h1, h2, p, a, and img into the document body.<ul>
+<li>In your index.html file, add a few elements such as h1, h2, p, a, and img into the document body.<ul>
 <li>What are these tags used for?</li>
 </ul>
 </li>
 <li>Toggle between Chrome and VS Code to see your changes rendered in the browser. CMD + R to reload the page in Chrome.</li>
 </ol>
-<p><strong>Exercise 2: Hello CSS</strong><br></p>
+<p><strong>Exercise 2: Hello CSS</strong></p>
 <p><strong>Goals:</strong></p>
 <ol>
 <li>Understand how to add CSS to a HTML document (internal &amp; external)</li>
 <li>Understand how to use CSS selectors - element, .class, #id</li>
 <li>Get familiar with how to use CSS properties </li>
 </ol>
-<!-- 
-**Instructions:**
-
-1. Create a new file called style.css in your "hello-world" folder.
-
--->
-
-<p><strong>Exercise 3: Hello JS</strong><br></p>
+<p><strong>Instructions:</strong></p>
+<ol>
+<li>Create a new file called style.css in your "hello-world" folder. We will use this in step 8.</li>
+<li>Create a <code>&lt;style&gt;...&lt;/style&gt;</code> tag to insert css into. Which part of your document does this go into?</li>
+<li>Write your first selector to change the color of a h1 element from black to red. Notice that css allows plain english words used for color or hex values such as #FF0000. <em>(What, hex values? <a href="https://www.pluralsight.com/blog/tutorials/understanding-hexadecimal-colors-simple">How to Read Hex Color Codes</a>)</em></li>
+<li>Reload the browser to see your changes. </li>
+<li>Now write a class selector called <code>.title</code> and apply it to the h2 elements. Give the <code>color</code> property a value of <code>green</code> or <code>#00FF00</code>. What happens when you reload the document?</li>
+<li>Now write an id selector called <code>#space-cat</code> and apply it to your img element. </li>
+<li>Lets give the cat pucture a solid border with a 5 pixel width and make it blue.</li>
+<li>Open your style.css file you created in step 1. We will be copying our css into that file now. </li>
+<li>Copy and paste the code contained within your <code>&lt;style&gt;...&lt;/style&gt;</code> element into style.css file. </li>
+<li>In your index.html file, insert the link tag to specify the external css file. <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>. This tells the index file to use the css it finds there. What happens if you load a css file and have css in your index file? Which selectors are used?</li>
+<li>Reload in the browser to see changes. </li>
+</ol>
+<p><strong>Exercise 3: Hello JS</strong></p>
 <p><strong>Goals:</strong></p>
 <ol>
 <li>Understand how to add JS to a HTML document (internal &amp; external)</li>
 <li>Get familiar with how JS can modify the contents of a page</li>
 <li>Get familiar with how to utilize the Chrome Dev Tools console</li>
 </ol>
-<!--
-
-**Instructions:**
-
-1. Create a new file called script.js in your "hello-world" folder.
-
-
-Make alert say hello world
-
-Declaring Variables, Naming
-Assigning a value
-Display value as alert
-Print value to console (introduce console in dev tools)
-Instead of using alert to display values, insert content into page
-
--->
-
+<p><strong>Instructions:</strong></p>
+<ol>
+<li>Create a new file called script.js in your "hello-world" folder. We will come back to this at a later step. </li>
+<li>Add the <code>&lt;script&gt;...&lt;/script&gt;</code> tag in your document. Where should you place it?</li>
+<li>Call the alert function and give it a string of text. <code>alert("hello spacecat!");</code>. What happens when you reload the page?</li>
+<li>Decalare a variable and give it the same string of text as a value. Now use the variable in the alert? What happens?</li>
+<li>Comment out the alert with a single line comment. </li>
+<li>Now, print the value to the console in the browser using the <code>console.log()</code> function. What happens?</li>
+</ol>
 <p><strong>Resources</strong></p>
 <ul>
 <li><a href="https://www.w3schools.com/tags/">W3 Schools HTML Reference</a></li>
