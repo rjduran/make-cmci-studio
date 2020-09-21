@@ -376,12 +376,38 @@
     Week 5: Web Applications &amp; Frameworks
   </a>
   
+    <nav class="md-nav" aria-label="Week 5: Web Applications &amp; Frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-4-digital-legos" class="md-nav__link">
+    Assignment 4: Digital Legos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#week-6-data-apis-connectivity" class="md-nav__link">
     Week 6: Data, API's &amp; Connectivity
   </a>
+  
+    <nav class="md-nav" aria-label="Week 6: Data, API's &amp; Connectivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-5-connect-the-dots" class="md-nav__link">
+    Assignment 5: Connect The Dots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1607,12 +1633,38 @@
     Week 5: Web Applications &amp; Frameworks
   </a>
   
+    <nav class="md-nav" aria-label="Week 5: Web Applications &amp; Frameworks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-4-digital-legos" class="md-nav__link">
+    Assignment 4: Digital Legos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#week-6-data-apis-connectivity" class="md-nav__link">
     Week 6: Data, API's &amp; Connectivity
   </a>
+  
+    <nav class="md-nav" aria-label="Week 6: Data, API's &amp; Connectivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assignment-5-connect-the-dots" class="md-nav__link">
+    Assignment 5: Connect The Dots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2279,13 +2331,21 @@ This website is a real-time version of the course syllabus. It is updated weekly
 <p><strong><em>Due: Sept 21</em></strong></p>
 <hr />
 <h3 id="week-5-web-applications-frameworks">Week 5: Web Applications &amp; Frameworks</h3>
-<p><em>Sept 21</em> | <em>Location: In Person + <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
+<p><em>Sept 21</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
 <p><strong>Discussion</strong> | <em>20 mins</em></p>
 <ul>
-<li>Assignments 3 Share</li>
-<li>Questions</li>
+<li>Assignments 3 Share / Questions</li>
+<li>Agenda<ul>
+<li>Javascript Workshop</li>
+<li>Frameworks &amp; Libraries</li>
+<li>Break</li>
+<li>Front-End Workshop</li>
+<li>Web Applications</li>
 </ul>
-<p><strong>Javascript Workshop</strong> | <em>In Class, 30 mins</em></p>
+</li>
+<li>Repo for this phase: <a href="https://github.com/rjduran/cm1-web-dev">https://github.com/rjduran/cm1-web-dev</a> </li>
+</ul>
+<p><strong>Javascript Workshop</strong> | <em>In Class, 20 mins</em></p>
 <p>Javascript is an enormous topic and we will only begin to scratch the surface of it today. I highly recommend working through some of the resources below and looking at the resources under the <a href="../dev/learning-js/">Learning JS</a> section. There are several great books and tutorial series that can give you a foundational understanding of the language and it's many uses. If you were to learn one programming language, I would recommend this one.</p>
 <p><strong>Goals:</strong></p>
 <ol>
@@ -2296,11 +2356,27 @@ This website is a real-time version of the course syllabus. It is updated weekly
 <p><strong>Instructions:</strong></p>
 <ol>
 <li>Create a new file called script.js in your "hello-world" folder. We will come back to this at a later step. </li>
-<li>Add the <code>&lt;script&gt;...&lt;/script&gt;</code> tag in your document. Where should you place it?</li>
-<li>Call the alert function and give it a string of text. <code>alert("hello spacecat!");</code>. What happens when you reload the page?</li>
-<li>Decalare a variable and give it the same string of text as a value. Now use the variable in the alert? What happens?</li>
-<li>Comment out the alert with a single line comment. </li>
+<li>
+<p>Add the <code>&lt;script&gt;...&lt;/script&gt;</code> tag in your document. Where should you place it? Discuss.</p>
+<ul>
+<li>Inside <code>&lt;head&gt;</code> = load before body contents</li>
+<li>Just before <code>&lt;/body&gt;</code> tag = load after body contents</li>
+</ul>
+</li>
+<li>
+<p>Call the alert function and give it a string of text. What happens when you reload the page?</p>
+<p><code>alert("hello spacecat!");</code></p>
+</li>
+<li>
+<p>Decalare a variable and give it the same string of text as a value. Now use the variable in the alert. What happens?</p>
+<p><code>var message = "hello spacecat!";
+alert(message);</code></p>
+</li>
+<li>
+<p>Comment out the alert with a single line comment. </p>
+</li>
 <li>Now, print the value to the console in the browser using the <code>console.log()</code> function. What happens?</li>
+<li>Copy and paste contents of <code>&lt;script&gt;</code> tag into the script.js file and comment out everything inside of <code>&lt;script&gt;</code>. What happens?</li>
 </ol>
 <p><strong>Resources</strong></p>
 <ul>
@@ -2309,126 +2385,140 @@ This website is a real-time version of the course syllabus. It is updated weekly
 <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">freeCodeCamp - Introduction to Javascript</a> - This tutorial series walks through many common examples and use cases. I recommend it third. </li>
 <li><a href="https://www.w3schools.com/js/">W3 Schools JS Tutorial</a> - I recommend this resource as a reference and for the tutorial series. </li>
 <li><a href="https://www.freecodecamp.org/news/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1/">A Study Plan To Cure JavaScript Fatigue (2016)</a></li>
-<li><a href="https://2019.stateofjs.com/">The State of JS 2019</a> - A great resource showing the state of various JS based frameworks.</li>
+<li><a href="https://www.webopedia.com/Programming">Programming Terminology</a> - A Wikipedia for Programming, Computer Science, and Much More. Don't know a term? Look here.</li>
+<li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> - This is a great free book to learn more about JS language fundamentals.</li>
 </ul>
-<!--
+<p><strong>Frameworks &amp; Libraries</strong></p>
+<ul>
+<li>What is a framework? </li>
+<li>What is a Library?</li>
+</ul>
+<p><strong>Library</strong></p>
+<p>A library is a collection of code containing objects, functions, and methods that you can use in an application or project. It can be written in CSS, Javascript, or some combination of both. </p>
+<p>Some common libraries: <a href="https://fonts.google.com/">Google Fonts</a>, <a href="https://animate.style/">Animate.css</a>, <a href="https://shopify.github.io/draggable/">Draggable.js</a>, <a href="https://masonry.desandro.com/">masonry.js</a>, <a href="https://p5js.org/">p5.js</a>, <a href="https://d3js.org/">D3.js</a>, and <a href="https://threejs.org/">Three.js</a>. </p>
+<p><strong>Framework</strong></p>
+<p>A framework can be everything you use in application development. It can consist of both front-end and back-end toolsets. It can be a library, a collection of libraries, a collection of scripts, or any piece software you need to create an application. It's best to think about a framework as something that is mostly ready to use out of the box for the most part, but still requires an understanding of the terminal, version control, and the web languages: HTML, CSS, and JS. </p>
+<p>Some common frameworks: <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://www.w3schools.com/w3css/">W3.CSS</a>, <a href="https://materializecss.com/">Materialize</a>, <a href="https://shoelace.style/index.html">Shoelace</a>, <a href="https://reactjs.org/">React</a>, <a href="https://expressjs.com/">Express</a>, and <a href="https://electronjs.org/">Electron Framework</a>.</p>
+<p><strong>Evaluating a Library or Framework</strong></p>
+<p>There are several questions you might ask yourself when choosing to use an existing library or framework. You typically start by looking at the documentation to compare similar features and components and to see if it does something you would like to incorporate into a project. </p>
+<ul>
+<li>What does it do?</li>
+<li>What's the benefit of using it?</li>
+<li>How do you use it?</li>
+<li>Pros and cons?</li>
+<li>Are there examples to follow?</li>
+<li>Is there a large community? </li>
+<li>Where can I get help?</li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="https://github.com/andrew--r/frontend-case-studies">Front-End Case Studies</a> - A great collection of case studies about development tools and practices across the industry.</li>
+<li><a href="https://2019.stateofjs.com/">The State of JS 2019</a> - A great resource showing the state of various JS based frameworks.</li>
+<li><a href="https://hackr.io/blog/top-bootstrap-alternatives">Top Bootstrap Alternatives</a></li>
+<li><a href="https://classpert.com/blog/top-bootstrap-alternatives">Bootstrap Alternatives: The top 36 options in 2020</a></li>
+</ul>
+<p><strong>BREAK - Take 10 min</strong></p>
+<p><strong>Front-End Workshop</strong> | <em>In Class, 45 mins</em></p>
+<p>In this workshop we will walk through building a filterable student list from scratch. It will use Bootstrap as the front-end framework and vanilla javascript to filter. </p>
+<p>References: <a href="https://www.figma.com/file/NhtPQ8SX7lm6Lu2icNuRzf/student-list?node-id=1668%3A2">Figma Design</a>, <a href="https://github.com/rjduran/cm1-web-dev">Github Repo</a></p>
+<p><strong>Goals:</strong></p>
+<ol>
+<li>Learn how to incorporate a front-end library or framework into a project.</li>
+<li>Understand how to structure a document based on the framework used.</li>
+<li>Learn how to utilize Javascript to filter a list of items. In this case student names. </li>
+</ol>
+<p><strong>Instructions:</strong></p>
+<ol>
+<li>Create a new project folder called "student-list".</li>
+<li>Create an index.html file inside the folder. This will be your primary document. </li>
+<li>Open Terminal and start a live-server instance inside your project folder. </li>
+<li>Naviagate to the Bootstrap documentation and look for the Starter Template code. Copy and paste it into your index.html file. You should see an empty page that says <strong>Hello, World!</strong> in your browser automatically as long as live-server is running.</li>
+<li>Add a <code>div</code> element with the <code>class="container"</code> inside your <code>body</code> element. All your content will go in here. </li>
+<li>Below the container div and just ablve the closing body tag, add a <code>&lt;script&gt;... &lt;/script&gt;</code> element. This is where we will put all our Javascript code. </li>
+<li>Refer to the Figma Design to see what the page should look like. <ul>
+<li>What elements will you need to make your document reflect the design in Figma?</li>
+<li>Tip: Look at the components section of the Bootstrap documentation.</li>
+</ul>
+</li>
+<li>Once you have the general structure of the page, we can proceed to make it interactive when typing into the search field by using javascript. </li>
+<li>Proceed to implement a filter algorithm as described in class. </li>
+</ol>
+<!-- 
+10. the following algorithm:
+      * get a reference to the input element (ie. the search field)
+      * add an event listener to detect when we press a key
+      * create a function called `filterNames`. This function does the work of filtering the names in the document while updating the list to show the matching results. The rest of the code will be placed inside the `filterNames` function.
+      * get the value of input and make it uppercase
+      * get a reference to the ul with `class="names"`
+      * using the querySelectAll method, get all the li's from the ul
+      * once we have a list of items, loop through the list and check if there are any matches.
+      * if there is a match, leave the item alone
+      * if there is not a match,
 
-**Front End Frameworks**
+ -->
 
-Inspect a few of them. 
-Compare features at a glance. Choose Bootstrap since it's easy to prototype with. 
-
-
-Designer Workflow:
-Look at one of them in Figma. What will your developer collaborator need?
-
-Developer Workflow:
-Look at one and make something with it from looking at the reference pages.
-
-Make a video showing this process. 
-
-
-Frameworks
-
-Learn to stand on the shoulders of giants when you need to. 
-
-Pros
-
-* Easy to use
-* Time saver
-* Free (mostly)
-
-Cons
-
-* Opinionated Design -- It's got the look and feel of the framework.
-* Requires learning the CSS design patterns to implement.
-* Sometimes dificult to modify.
-
-Some common frameworks
-
-* [Bootstrap](https://getbootstrap.com/)
-* [W3.CSS](https://www.w3schools.com/w3css/)
-
-
-Starter Templates
-
-
-
-
-
-**Resources**
-
-* [Bootstrap Design 1.0 (UI Kit)](https://getbootstrap.design/) ($12) - A great BS4 UI kit for Figma. 
-* [W3 Schools Bootstrap 4 Tutorial](https://www.w3schools.com/bootstrap4/)
-
-* [Top Bootstrap Alternatives](https://hackr.io/blog/top-bootstrap-alternatives)
-* [10 Best CSS Frameworks for Front-End Developers](https://geekflare.com/best-css-frameworks/)
-* [Bootstrap Alternatives: The top 36 options in 2020](https://classpert.com/blog/top-bootstrap-alternatives)
-* [Front-End Case Studies](https://github.com/andrew--r/frontend-case-studies) - A great collection of case studies about development tools and practices across the industry.
-
-
-
-### Web Applications
-
-This is referring to the entire stack. What makes an application?
-
-A system that communicates with a server that has access to system resources like memory for databases and cpu or gpu. Ie. speed, power, and connectivity.
-It may have more than one type of client interface. Ie Mobile, desktop, another server, API, another web app.
-
-It may utilize 
-
-Node.js based app example that uses express
-Make a multi page or route app
-
-
-Node.js based project
-
-objectives
-make server based website using node
-setup routes that serve different content 
-use a simple front-end library (bootstrap) for UI and mobile first
-
-
-
-
-
-#### Assignment 4: Digital Legos
-
-
-Goal: Translate a set of Figma based designs into functional prototypes that run in a live-server.
-
-Figma Project: URL
-
-Thoughts on how to accomplish this:
-
-* Create one or more project folders that contain HTML, CSS and JS files required to run from a live-server based environment. 
-* Include a local copy of the Bootstrap framework in your project assets (ie. it should be part of your project committed to Github).
-* Utilize Bootstrap Components as they exist in the latest version of Bootstrap.
-* Advanced: Modify the default Bootstrap styles to give your project an adjacent look and feel. 
-* Make a repository on Github for your project and commit all project files to it. I should be able to clone your project repo and run it in a localhost on my machine to see the same result without changing filenames or folders. _Hint: The repo should look similar to the hello-world folder and files you created in class. It should also include a README.md file since you always include this text file with any Github repo you create._
-
-**Deliverable:**
-
-  1. A short 1-2 min video screen capture demonstrating your website running in a local development environment as setup in class. Be sure to briefly introduce yourself and your project, provide an overview of what you made and how it works. Embed the video into your blog post. 
-
-    _Pro Tip: If you are new to screen capture tools, look into using [Screencast-o-matic](https://screencast-o-matic.com/) or the built in screen capture tools of MacOS (CMD + Shift + 5) to document your workflow. Create an account with Youtube and upload your video._
-
-  2. Include a link to your Github repo for the code written.
-  3. A brief writeup on your blog about your learning experience. 
-
-    * What hurdles did you encounter and how did you overcome them? 
-    * What worked and what didn't? 
-    * What new tools did you try? 
-    * How would you explain what you've done to someone that doesn't know anything about web development and the tools used?
-
-Submit a link to your post on Slack **#cmstudio** by EOD.
-
-
-
-**_Due: Sept 28_**
-
--->
-
+<p><strong>Questions / Next Steps</strong></p>
+<ol>
+<li>How do I add more data to the page?</li>
+<li>How do I update the data?</li>
+<li>Where is the data stored and how do I access it?</li>
+</ol>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="https://www.w3schools.com/bootstrap4/">W3 Schools Bootstrap 4 Tutorial</a></li>
+<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+<li><a href="https://www.figma.com/">Figma</a> - Signup for a free account with your @colorado.edu email address and <a href="https://help.figma.com/hc/en-us/articles/360039829674#Criteria">apply for a free Education team</a>. </li>
+<li><a href="https://getbootstrap.design/">Bootstrap Design 1.0 (UI Kit)</a> ($12) - A great BS4 UI kit for Figma.</li>
+</ul>
+<p><strong>Web Applications</strong></p>
+<p>What makes a web application? The modern term "web application" applies to a variety of systems or stacks. Typically, these systems communicate with one or more servers for access to system resources like memory, databases, and cpu or gpu. ie. speed, power, and connectivity. It may have more than one type of client interface. ie. Mobile, desktop, API, or another application.</p>
+<p><strong>What are some common types of websites or web applications?</strong></p>
+<ul>
+<li>Static Website - Basic websites, blogs, etc</li>
+<li>Native or Mobile App</li>
+<li>Progressive Web App (PWA) - A responsive mobile website that mimics the behavior of native or mobile apps. </li>
+<li>Single Page App (SPA) - An application that is dynamic and interactive without reloading the entire page.</li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><a href="https://existek.com/blog/web-application-architecture/">Web Application Architecture</a> - Summary of the components found in various kinds of web apps. </li>
+</ul>
+<h4 id="assignment-4-digital-legos">Assignment 4: Digital Legos</h4>
+<p>Choose one or more libraries or frameworks and make something with it.</p>
+<p>Thoughts on how to accomplish this:</p>
+<ul>
+<li>If you have project in mind for your final project or another project, begin to identify what tools you might use to build that project and attempt to work on a piece of it. <ul>
+<li>What functionalites does the project need? (Maybe there's a library for it)</li>
+<li>How do you see the project working from the user experience?</li>
+<li>What design elements can you identify and how might they be coded?</li>
+</ul>
+</li>
+<li>Investigate libraries that seem interesting to you. Assess their capabilities and how you can apply it to a project. </li>
+<li>Begin by looking over examples found in the documentation.</li>
+<li>Look for "getting started" documentation about a library or framework. Work through it and see where it takes you. Google is your best friend.</li>
+<li>Try to be as specific as possible when invesitgating a library or framework. What is your motivation for learning it and what do you want to accomplish with it? Identify some specific uses of it and focus. </li>
+<li>Start simple. Dont try to understand it all. If you copy and paste code from somewhere, copy one line at a time and learn what it does. Then add more code and repeat. It's easier to start simply and build up complex functionlaity than to work the other way.</li>
+<li>Use comments (in JS, HTML, or CSS) to write notes to yourself. </li>
+<li>Work together! Share code, ideas, and libraries you find with eachother.</li>
+<li>Have fun with it!</li>
+</ul>
+<p>Make a repository on Github for your project and commit all project files to it. I should be able to clone your project repo and run it in a localhost on my machine to see the same result without changing filenames or folders. <em>Note: Your repo should always include a README.md file with instructions about it's use and what it does.</em></p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>A short 2-4 min video screen capture demonstrating your project running in a local development environment. Be sure to briefly introduce yourself and your project, provide an overview of what you made and how it works. Embed the video into your blog post. </li>
+<li>Include a link to your Github repo for the code written.</li>
+<li>
+<p>A brief writeup on your blog about your learning experience. </p>
+<ul>
+<li>What hurdles did you encounter and how did you overcome them? </li>
+<li>What worked and what didn't? </li>
+<li>What new tools did you try? </li>
+<li>How would you explain what you've done to someone that doesn't know anything about web development and the tools used?</li>
+</ul>
+</li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> by EOD.</p>
+<p><strong><em>Due: Sept 28</em></strong></p>
 <hr />
 <h3 id="week-6-data-apis-connectivity">Week 6: Data, API's &amp; Connectivity</h3>
 <p><em>Sept 28</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
@@ -2454,9 +2544,10 @@ Look at JS objects and JSON?
 * [JSON]()
 
 
+-->
 
-#### Assignment 5: TBD
-
+<h4 id="assignment-5-connect-the-dots">Assignment 5: Connect The Dots</h4>
+<!-- 
 Choose one (or more) every day object(s) in your life and make a simple website for it / them. You might consider the site as a container for a favored item or collection of things, a product to sell, or simply a site that pays tribute to the item or object and what it means to you in life. This idea was inspired by the website [Ode to Things](https://www.odetothings.com/), which is an e-commerce store and curated collection of physical every day products.
 
 Thoughts on how to accomplish this:
@@ -2484,7 +2575,28 @@ Thoughts on how to accomplish this:
 
 Submit a link to your post on Slack **#cmstudio** by EOD.
 
-**_Due: Oct 5_**
+ -->
+
+<p><strong><em>Due: Oct 5</em></strong></p>
+<!--
+
+This is referring to the entire stack. What makes an application?
+
+A system that communicates with a server that has access to system resources like memory for databases and cpu or gpu. Ie. speed, power, and connectivity.
+It may have more than one type of client interface. Ie Mobile, desktop, another server, API, another web app.
+
+It may utilize 
+
+Node.js based app example that uses express
+Make a multi page or route app
+
+
+Node.js based project
+
+objectives
+make server based website using node
+setup routes that serve different content 
+use a simple front-end library (bootstrap) for UI and mobile first
 
 -->
 
