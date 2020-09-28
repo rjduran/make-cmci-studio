@@ -1394,18 +1394,30 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../projects/" title="Projects" class="md-nav__link">
+      Projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-16">
+    <label class="md-nav__link" for="nav-17">
       Archive
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Archive" data-md-level="1">
-      <label class="md-nav__title" for="nav-16">
+      <label class="md-nav__title" for="nav-17">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -2595,20 +2607,6 @@ alert(message);</code></p>
 <li>Once you have the general structure of the page, we can proceed to make it interactive when typing into the search field by using javascript. </li>
 <li>Proceed to implement a filter algorithm as described in class. </li>
 </ol>
-<!-- 
-10. the following algorithm:
-      * get a reference to the input element (ie. the search field)
-      * add an event listener to detect when we press a key
-      * create a function called `filterNames`. This function does the work of filtering the names in the document while updating the list to show the matching results. The rest of the code will be placed inside the `filterNames` function.
-      * get the value of input and make it uppercase
-      * get a reference to the ul with `class="names"`
-      * using the querySelectAll method, get all the li's from the ul
-      * once we have a list of items, loop through the list and check if there are any matches.
-      * if there is a match, leave the item alone
-      * if there is not a match,
-
- -->
-
 <p><strong>Questions / Next Steps</strong></p>
 <ol>
 <li>How do I add more data to the page?</li>
@@ -2680,65 +2678,272 @@ alert(message);</code></p>
 <hr />
 <h3 id="week-6-data-apis-connectivity">Week 6: Data, API's &amp; Connectivity</h3>
 <p><em>Sept 28</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
-<p><strong>Discussion</strong></p>
+<p><strong>Discussion</strong> | <em>20 mins</em></p>
 <ul>
 <li>Assignment 4 Share</li>
-<li>Questions</li>
+<li>Questions on projects, tools, languages - HTML, CSS, JS, etc</li>
+<li>Working together</li>
+<li>Agenda<ul>
+<li>APIs - <em>What and Why</em></li>
+<li>API Mashup Session - 30 mins</li>
+<li>Break - 10 mins</li>
+<li>Data - <em>How</em></li>
+<li>API Workshop - 45 mins</li>
 </ul>
-<h4 id="assignment-5-connect-the-dots">Assignment 5: Connect The Dots</h4>
-<!-- 
-Choose one (or more) every day object(s) in your life and make a simple website for it / them. You might consider the site as a container for a favored item or collection of things, a product to sell, or simply a site that pays tribute to the item or object and what it means to you in life. This idea was inspired by the website [Ode to Things](https://www.odetothings.com/), which is an e-commerce store and curated collection of physical every day products.
+</li>
+</ul>
+<p><strong>API's</strong></p>
+<ul>
+<li>What is an API?</li>
+<li>What is the purpose of an API?</li>
+<li>How do you use them?</li>
+<li>How do you make your own?</li>
+</ul>
+<p>Most importantly, as a designer of the future, what does one need to know to work with APIs? </p>
+<p>The best place to start is by looking at what kinds of APIs exist and how they have been used to build products. </p>
+<p><strong>Popular APIs</strong></p>
+<ul>
+<li><a href="https://www.instagram.com/developer/">Instagram</a></li>
+<li><a href="https://developer.twitter.com/en/docs.html">Twitter</a></li>
+<li><a href="https://api.slack.com/">Slack</a></li>
+<li><a href="https://developers.google.com/youtube/">Youtube</a></li>
+<li><a href="https://developers.soundcloud.com/">Soundcloud</a></li>
+<li><a href="https://developer.spotify.com/documentation/web-api/">Spotify</a></li>
+<li><a href="https://developers.google.com/sheets/api">Google Sheets</a></li>
+<li><a href="https://developer.nytimes.com/">New York Times</a> (<a href="https://youtu.be/IMne3LY4bks">Dan Shiffman Tutorial</a>)</li>
+<li><a href="https://www.goodreads.com/api">Goodreads</a></li>
+<li><a href="http://numbersapi.com/#42">Numbers API</a></li>
+<li><a href="https://developer.wordnik.com/">Wordnik</a></li>
+<li><a href="https://www.discogs.com/developers/">Discogs</a></li>
+<li><a href="https://developer.pandora.com/">Pandora</a></li>
+<li>Voice APIs<ul>
+<li><a href="https://cloud.google.com/text-to-speech#section-8">Google Text-to-Speech</a></li>
+<li><a href="https://aws.amazon.com/polly/">Amazon Polly</a></li>
+</ul>
+</li>
+<li>Hardware APIs<ul>
+<li><a href="https://developers.google.com/nest/device-access">Google Nest</a></li>
+<li>Amazon Echo &amp; Alexa Devices</li>
+</ul>
+</li>
+</ul>
+<p><strong>API Mashups</strong></p>
+<p>What's a mashup? It's an application that utilizes one or more APIs in combination to provide a solution to a problem or ask new questions.</p>
+<ul>
+<li><a href="https://apifriends.com/api-security/api-mashup/">What is an API Mashup?</a></li>
+<li><a href="https://www.programmableweb.com/mashups">Programmable Web Mashups</a></li>
+<li><a href="http://www.housingmaps.com/">HousingMaps</a> (2005) was the very first Google Maps mashup, created before there was a Google Maps API. It overlaid Craigslist apartment and housing listings on a map, for some 30 US cities plus London.</li>
+<li><a href="http://www.wefeelfine.org/mission.html">We Feel Fine by Jonathan Harris</a> (2006) - New media art project that explores human emotion on a global scale. </li>
+<li><a href="https://www.wnycstudios.org/podcasts/radiolab/articles/insomnia-line">Radiolab: Insomnia Line</a> - Recent episode that explores the use of voice mail to connect with people experiencing insomnia. I thought this was an interesting parallel and accessible form of crowd sourcing data relating to emotional states.</li>
+<li><a href="http://znerold.com/elkbot/index.html">#Elkbot</a> (2011) / <a href="https://vimeo.com/23410669">Demo WIP Video</a> - by RJ Duran &amp; Chris Znerold</li>
+<li><a href="https://medium.com/capital-one-tech/infographic-a-history-of-modern-api-mashups-9476dad7685b">INFOGRAPHIC — A History of Modern API Mashups</a></li>
+<li><a href="https://orthogonal.io/insights/top-15-music-ap/">TOP 15 MUSIC APIS TO POWER YOUR NEXT MASHUP</a></li>
+<li><a href="https://medium.com/@tesshstevens/mapping-world-literature-with-mapbox-3a2b84bd85de">Mapping World Literature with Mapbox</a> by Tess Stevens (C11)</li>
+</ul>
+<p><strong>API Based Platforms</strong></p>
+<p>These are platforms that utilize APIs in their products. The use of one or more APIs is core to their busoiness model.</p>
+<ul>
+<li><a href="https://later.com/">later.com</a> - Instagram Marketing</li>
+<li><a href="https://cmcistudio.slack.com/apps">Slack Apps</a> - Apps for Slack ecosystem</li>
+<li><a href="https://zapier.com/">Zapier</a> - Connects anything to anything else</li>
+</ul>
+<p><strong>Where to Discover APIs</strong></p>
+<ul>
+<li><a href="https://github.com/public-apis/public-apis">Public APIs</a> - A collective list of free APIs for use in software and web development.</li>
+<li><a href="https://www.programmableweb.com/">Programmable Web</a> - This is a great resource for discovering APIs and learning how to use them.<ul>
+<li><a href="https://www.programmableweb.com/api-university">API University</a></li>
+</ul>
+</li>
+<li><a href="https://rapidapi.com/collection/list-of-free-apis">Free Public APIs for Developers APIs</a></li>
+<li><a href="https://www.programmableweb.com/news/14-most-popular-art-apis/brief/2020/07/19">14 Most Popular Art APIs</a></li>
+<li><a href="https://www.motocms.com/blog/en/most-popular-apis-for-web/">30+ Most Popular APIs for Web in 2020</a></li>
+<li><a href="https://www.signitysolutions.com/blog/artificial-intelligence-apis/">Top 10 Artificial Intelligence APIs for 2020</a></li>
+<li><a href="https://rapidapi.com/blog/most-popular-api/">Top 50 Most Popular APIs on RapidAPI (2020)</a></li>
+<li><a href="https://codeburst.io/6-interesting-apis-to-check-out-in-2018-5d6830063f29">6 Interesting APIs to Check Out in 2020</a></li>
+</ul>
+<p><strong>API Mashup Session</strong> | <em>Breakout Rooms, 30 mins</em></p>
+<p>In teams of 3, brainstorm a concept or solution that makes use of 2 APIs. Spend some time researching the APIs of interest and brainstorming how they could be used to solve a problem or simply have some fun and answer a question. </p>
+<p>Some things to think about when brainstorming and researching APIs:</p>
+<p>At a high level:<br></p>
+<ul>
+<li>What kind of possibilities emerge when researching your chosen APIs together?</li>
+<li>Whats unique to each API? What features does it have?</li>
+<li>How do the APIs chosen complement eachother?</li>
+</ul>
+<p>At a lower level:<br></p>
+<ul>
+<li>What kind of data is available?</li>
+<li>What kind of access is required to make the API work? </li>
+<li>What does your product or website need to ask of a user? What kind of permission? And what does that mean for how the API is used?</li>
+</ul>
+<p><strong>When time is up we will take a short 10 min break and come back together and discuss.</strong></p>
+<p><strong>BREAK - Take 10 min</strong></p>
+<p><strong>Data</strong></p>
+<ul>
+<li>What is Data? </li>
+<li>How is it represented?<ul>
+<li>JSON, CSV, TXT</li>
+</ul>
+</li>
+<li>How do I make a database?<ul>
+<li>What is a database?</li>
+</ul>
+</li>
+<li>Web applications read/write into databases on servers using data formatted in JSON.</li>
+<li>Web applications communicate using JSON.</li>
+</ul>
+<p><strong>Overviews</strong></p>
+<ul>
+<li><a href="https://technologyadvice.com/blog/information-technology/how-to-use-an-api/">How to Use an API: Just the Basics</a></li>
+<li><a href="https://www.programmableweb.com/news/json-clearly-king-api-data-formats-2020/research/2020/04/03">JSON is Clearly the King of API Data Formats in 2020</a></li>
+</ul>
+<p><strong>Building Databases / APIs</strong></p>
+<p><em>I have an idea for a database or API. How do I begin put something together? What tools can I use?</em></p>
+<ul>
+<li><a href="https://zapier.com/learn/forms-surveys/simple-database-app-builders/">Building an App the Simple Way: 6 Database-Powered App Builders</a> (2015) - List of tools to build databases. </li>
+<li><a href="https://geekflare.com/api-tools/">11 Best Tools to Test and Build API Faster</a></li>
+<li><a href="https://strapi.io/">Strapi</a> - Node.js based headless CMS</li>
+<li><a href="https://firebase.google.com/">Firebase</a> - <a href="https://shiffman.net/a2z/firebase/">Dan Shiffman's Firebase Tutorial</a> - This is a great resource for going deeper into JS, APIs, and related programming topics in general.</li>
+<li><a href="https://sheetsu.com/">Sheetsu</a> - Makes it easy to access a Google Sheet through an API</li>
+<li><a href="https://www.getpostman.com/">Postman</a> - A great tool for testing all types of requests to/from APIs</li>
+</ul>
+<p><strong>Additional Resources</strong></p>
+<p>REST, CRUD HTTP/HTTPS, Ports, URL</p>
+<ul>
+<li>HTTP<ul>
+<li><a href="https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177">HTTP: The Protocol Every Web Developer Must Know - Part 1</a></li>
+<li><a href="http://www.informit.com/articles/article.aspx?p=169578">Understanding Application Layer Protocols</a></li>
+<li><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
+</ul>
+</li>
+<li>Ports<ul>
+<li><a href="http://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html">List of ports</a>. For example, http uses port 80, https uses port 443.</li>
+</ul>
+</li>
+<li>CRUD<ul>
+<li><a href="https://www.codecademy.com/articles/what-is-crud">What is CRUD?</a></li>
+</ul>
+</li>
+<li>URLs<ul>
+<li>Whats in a URL? protocol, host, port, resource path, query (<a href="https://cdn.tutsplus.com/net/authors/jeremymcpeak/http1-url-structure.png">Image</a>)</li>
+</ul>
+</li>
+<li>REST<ul>
+<li><a href="https://restfulapi.net/">What is REST</a></li>
+<li><a href="https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming">What exactly is RESTful programming?</a></li>
+<li><a href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/">Understanding And Using REST APIs</a> - Great overview of APIs and using them.</li>
+</ul>
+</li>
+</ul>
+<p>Javascript</p>
+<ul>
+<li><a href="https://shiffman.net/a2z/data-apis/">Shiffman - Data, Libraries and APIs</a> - A great section of Dan Shiffmans <em>Programming from A to Z</em> Course covering APIs, data, and p5.js.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data">Fetching data from a server</a> - Explains how to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch API (fetch())</a> vs <a href="https://api.jquery.com/jquery.ajax/">jQuery.ajax()</a> vs <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>.</li>
+<li>JS Datatypes<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript">Understanding Data Types in Javascript</a></li>
+</ul>
+</li>
+<li>Arrays<ul>
+<li><a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#data-type-array">Data Type: Arrays</a></li>
+<li><a href="https://www.javascript.com/learn/arrays">Arrays Quick Reference</a></li>
+<li><a href="https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b">Array vs Set vs Map vs Object — Real-time use cases in Javascript (ES6/ES7)</a></li>
+</ul>
+</li>
+<li>Objects<ul>
+<li><a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#data-type-object">Data Type: Objects</a></li>
+<li>Debugging: Using <a href="https://www.w3schools.com/js/js_datatypes.asp">typeof</a>. <code>typeof "a string"</code></li>
+<li><a href="https://www.javascript.com/learn/objects">Objects Quick Reference</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">Javascript Built-In Object Reference</a></li>
+<li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> - This is a great book to learn more about the language and how to use Objects.</li>
+</ul>
+</li>
+<li>JSON<ul>
+<li><a href="https://www.w3schools.com/js/js_json_intro.asp">JavaScript Object Notation (JSON)</a> - A syntax for storing and exchanging data.</li>
+<li><a href="https://www.w3schools.com/js/js_json_syntax.asp">JSON Syntax</a>    </li>
+</ul>
+</li>
+</ul>
+<!--
 
-Thoughts on how to accomplish this:
+**API Workshop** | _In class, 45 mins_
 
-* Build a webpage from scratch that makes use of HTML elements and CSS selectors.
-* Use necessary html elements that act as containers for different types of content and page heirarchy: text, images, video, etc.
-* Develop your webpage using a local development environment aka live-server.
-* When done, make a repository on Github for your project and commit the required index.html file and and any media files to it. I should be able to clone your project repo and run it in a localhost on my machine to see the same result without changing filenames or folders. _Hint: The repo should look similar to the hello-world folder and files you created in class. It should also include a README.md file since you always include this text file with any Github repo you create._
-* Video: [CM1 Assignment 3 Tip: Github, VSCode & Terminal Workflow](https://www.youtube.com/watch?v=T7i1dkfvtrI)
-* Advanced Option: If you are feeling comfortable with HTML and CSS, explore an aspect of HTML or CSS that is new to you or take the leap into Javascript or using a front-end framework. 
+**Example 1: Reading data from a Google sheet**
 
-**Deliverable:**
+Ways to read data from a Google Sheet as your database.
 
-  1. A short 1-2 min video screen capture demonstrating your website running in a local development environment as setup in class. Be sure to briefly introduce yourself and your project, provide an overview of what you made and how it works. Embed the video into your blog post. 
+Method 1: [g-sheets-api](https://github.com/bpk68/g-sheets-api)
+Requires: Node.js
 
-    _Pro Tip: If you are new to screen capture tools, look into using [Screencast-o-matic](https://screencast-o-matic.com/) or the built in screen capture tools of MacOS (CMD + Shift + 5) to document your workflow. Create an account with Youtube and upload your video._
+Method 2: [Tabletop.js](https://github.com/jsoma/tabletop)
 
-  2. Include a link to your Github repo for the code written.
-  3. A brief writeup on your blog about your learning experience. 
+Method 3: [Sheetsu](https://sheetsu.com/)
+Sheetsu makes it easy to access a Google Sheet through an API.
 
-    * What hurdles did you encounter and how did you overcome them? 
-    * What worked and what didn't? 
-    * What new tools did you try? 
-    * How would you explain what you've done to someone that doesn't know anything about web development and the tools used?
 
-Submit a link to your post on Slack **#cmstudio** by EOD.
+**Example 2: Requesting data from an API**
+
+This will use the student list database I setup in Strapi. 
+
+Goals: 
+1. Understand what JSON is and how it's used
+2. Learn how to GET data from an API using Javascript
+3. Learn how to display it on a webpage
+
+Using chrome browser to view the data we get
+[JSON Formatter](https://github.com/callumlocke/json-formatter)
+
+Using [Postman](https://www.getpostman.com/)
+
+Share my database running 
+
+Tools to share a localhost
+[ngrok](https://ngrok.com/) - Requires node.js. Sessions limited to 8 hrs. 
+
+To use: In Terminal, type `ngrok <protocol> <port>`. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.
+
+
+<pre><code>    ngrok http 8080
+</code></pre>
+
+
+To use: In Terminal, type `ssh -R 80:localhost:8080 ssh.localhost.run`. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.
+
+<pre><code>    ssh -R 80:localhost:8080 ssh.localhost.run
+</code></pre>
+
+[localhost.run](http://localhost.run/) - No install required. SSH Keys required.
+
 
  -->
 
+<h4 id="assignment-5-connect-the-dots">Assignment 5: Connect The Dots</h4>
+<p>This week I would like you to explore the world of APIs in two ways:</p>
+<ol>
+<li>Design a mashup concept that attempts to solve a problem.</li>
+<li>Choose an API to get familiar with and attempt to make something using it.</li>
+</ol>
+<p>Thoughts on how to accomplish this:</p>
+<ul>
+<li>Continue down the path you came up with during class or develop a new approach.</li>
+<li>Spend some time researching APIs that are in line with products or services you are familiar with and use often.</li>
+<li>Research mashups that use an API you are exploring. What was done? Can it be improved?</li>
+<li>What are some of your hobbies and interests? Is there an API for it? If not, what if there was? Whats possible then?</li>
+<li>Write down the names of a bunch of APIs you research and put them into a hat. Stir it around and pull out two. Repeat this process for a time and write down all the combinations. What's interesting?</li>
+<li>Look for recent tutorials that make use of an API you are curious about. Attempt to recreate the workflow. </li>
+<li>Start with simple GET requests and increase the complexity of your queries as you get more familiar with the documentation and API.</li>
+<li>Work through the class examples and develop a workflow that enables you to work with data in a new way. For example, using Google Forms (for user data input) to generate a database (Google Sheet), which you then can pull data from via API.</li>
+<li>Experiment with an API and ask "what if?" questions in the process.</li>
+<li>WORK TOGETHER! Make time to work together outside of class.</li>
+<li>Have fun with it!</li>
+</ul>
+<p>Make a repository on Github for your project and commit all project files to it. I should be able to clone your project repo and run it in a localhost on my machine to see the same result without changing filenames or folders. <em>Note: Your repo should always include a README.md file with instructions about it's use and what it does.</em></p>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>A blog post describing your ideas and sharing any visuals created or referenced to illustrate the concept. You can record a short video presentation with slides if that helps to share the concept. Embed your video into your blog post. </li>
+<li>Include a link to your Github repo for any code written.</li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> by EOD.</p>
 <p><strong><em>Due: Oct 5</em></strong></p>
-<!--
-
-This is referring to the entire stack. What makes an application?
-
-A system that communicates with a server that has access to system resources like memory for databases and cpu or gpu. Ie. speed, power, and connectivity.
-It may have more than one type of client interface. Ie Mobile, desktop, another server, API, another web app.
-
-It may utilize 
-
-Node.js based app example that uses express
-Make a multi page or route app
-
-
-Node.js based project
-
-objectives
-make server based website using node
-setup routes that serve different content 
-use a simple front-end library (bootstrap) for UI and mobile first
-
--->
-
 <hr />
 <h2 id="phase-3-digital-design-foundations">Phase 3: Digital Design Foundations</h2>
 <h3 id="week-7-intro-to-cad">Week 7: Intro to CAD</h3>
