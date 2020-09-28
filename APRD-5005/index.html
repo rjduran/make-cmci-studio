@@ -2873,33 +2873,23 @@ alert(message);</code></p>
 <li>Method 3: <a href="https://sheetsu.com/">Sheetsu</a> - Sheetsu makes it easy to access a Google Sheet through an API.</li>
 </ul>
 <p><strong>Example 2: Requesting data from an API</strong></p>
-<p>This will use the student list database I setup in Strapi. We will look at how it is setup and how it is pulling data from the database into the page. We will also look at how to make a localhost accessible to anyone on the web using ngrok and localhost.run.</p>
-<!-- 
-Using chrome browser to view the data we get
-[JSON Formatter](https://github.com/callumlocke/json-formatter)
-
-Using [Postman](https://www.getpostman.com/)
-
-Share my database running 
-
-Tools to share a localhost
-[ngrok](https://ngrok.com/) - Requires node.js. Sessions limited to 8 hrs. 
-
-To use: In Terminal, type `ngrok <protocol> <port>`. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.
-
-
+<p>This will use the student list database I setup in <a href="https://strapi.io/">Strapi</a>. We will look at how it is setup and how it is pulling data from the database into the page. We will also look at how to make a localhost accessible to anyone on the web using ngrok and localhost.run.</p>
+<p>The code is available under week6/student-list-strapi in the class repo.</p>
+<p>Tools we will look at:</p>
+<ul>
+<li><a href="https://github.com/callumlocke/json-formatter">JSON Formatter</a> makes it easy to see JSON data in the browser. </li>
+<li><a href="https://www.getpostman.com/">Postman</a> - Allows you to send requests to an API</li>
+</ul>
+<p>How to share a database or localhost over the Internet:</p>
+<p>Method 1: <a href="https://ngrok.com/">ngrok</a> - Requires node.js. Sessions limited to 8 hrs. </p>
+<p>To use: In Terminal, type <code>ngrok &lt;protocol&gt; &lt;port&gt;</code>. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.</p>
 <pre><code>    ngrok http 8080
 </code></pre>
 
-
-To use: In Terminal, type `ssh -R 80:localhost:8080 ssh.localhost.run`. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.
-
+<p>Method 2: <a href="http://localhost.run/">localhost.run</a> - No install required. SSH Keys required.</p>
+<p>To use: In Terminal, type <code>ssh -R 80:localhost:8080 ssh.localhost.run</code>. For example, to share a localhost running on port 8080, enter the following. Note this process uses two Terminal windows. Once the connection is established, you will get a public URL to use.</p>
 <pre><code>    ssh -R 80:localhost:8080 ssh.localhost.run
 </code></pre>
-
-[localhost.run](http://localhost.run/) - No install required. SSH Keys required.
-
- -->
 
 <h4 id="assignment-5-connect-the-dots">Assignment 5: Connect The Dots</h4>
 <p>This week I would like you to explore the world of APIs in two ways:</p>
