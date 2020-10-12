@@ -445,11 +445,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#week-8-parametric-modeling" class="md-nav__link">
-    Week 8: Parametric Modeling
+  <a href="#week-8-parametric-design" class="md-nav__link">
+    Week 8: Parametric Design
   </a>
   
-    <nav class="md-nav" aria-label="Week 8: Parametric Modeling">
+    <nav class="md-nav" aria-label="Week 8: Parametric Design">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -847,6 +847,18 @@
   <li class="md-nav__item">
     <a href="../des/learning-rhino/intro-to-rhino/" title="Intro to Rhino Workshop" class="md-nav__link">
       Intro to Rhino Workshop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../des/learning-rhino/intro-to-gh/" title="Intro to Grasshopper Workshop" class="md-nav__link">
+      Intro to Grasshopper Workshop
     </a>
   </li>
 
@@ -1905,11 +1917,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#week-8-parametric-modeling" class="md-nav__link">
-    Week 8: Parametric Modeling
+  <a href="#week-8-parametric-design" class="md-nav__link">
+    Week 8: Parametric Design
   </a>
   
-    <nav class="md-nav" aria-label="Week 8: Parametric Modeling">
+    <nav class="md-nav" aria-label="Week 8: Parametric Design">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2899,7 +2911,7 @@ alert(message);</code></p>
 <li><a href="https://codeburst.io/6-interesting-apis-to-check-out-in-2018-5d6830063f29">6 Interesting APIs to Check Out in 2020</a></li>
 </ul>
 <p><strong>API Mashup Session</strong> | <em>Breakout Rooms, 30 mins</em></p>
-<p>In teams of 2, brainstorm a concept or solution that makes use of 2 APIs. Spend some time researching the APIs of interest and brainstorming how they could be used to solve a problem or simply have some fun. Make a list of questions concerning that arise in the process.</p>
+<p>In teams, brainstorm a concept or solution that makes use of 2 APIs. Spend some time researching the APIs of interest and brainstorming how they could be used to solve a problem or simply have some fun. Make a list of questions concerning that arise in the process.</p>
 <p>Place all your ideas into the shared <a href="https://app.milanote.com/1KmUX216eTF42l?p=EGFeQJccGfc">API Mashup board</a> board in Milanote. <em>Your will need to signup for an account to work in this shared board.</em></p>
 <p>Some things to think about when brainstorming and researching APIs:</p>
 <p>At a high level:<br></p>
@@ -3216,17 +3228,105 @@ alert(message);</code></p>
 <p>Submit a link to your post on Slack <strong>#cmstudio</strong> by EOD.</p>
 <p><strong><em>Due: Oct 12</em></strong></p>
 <hr />
-<h3 id="week-8-parametric-modeling">Week 8: Parametric Modeling</h3>
+<h3 id="week-8-parametric-design">Week 8: Parametric Design</h3>
 <p><em>Oct 12</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
-<!--
-
-Show two workflows
-* Rhino + Grasshopper (Pattern making examples)
-* Fusion 360 w/ parameters (Flat pack furniture examples)
-
- -->
-
+<ul>
+<li>Assignment 6 Share<ul>
+<li>It's great to see the variety of approaches to this project.</li>
+<li>Leveraging available resources is key for working quickly on a concept while ramping up on a new skillset or toolset.</li>
+<li>Export FBX files to retain color and texture information.</li>
+</ul>
+</li>
+<li>Agenda<ul>
+<li>Parametric Modeling vs Direct Modeling</li>
+<li>Examples of Parametric Design</li>
+<li>Break</li>
+<li>Fusion 360 Work Session</li>
+<li>Rhino &amp; Intro to Grasshopper Work Session? - How many people experimented with Rhino?</li>
+</ul>
+</li>
+</ul>
+<p><strong>Parametric Modeling vs Direct Modeling</strong></p>
+<p><strong>Parametric Modeling</strong></p>
+<p>Parametric Modeling (aka Parametric Design) is a process based on algorithmic thinking that enables the expression of parameters and rules / constraints that, together, define, encode and clarify the relationship between design intent and design response. This approach follows a step by step process and may require careful planning to design a model. </p>
+<p><em>Parametric modeling is extremely useful for products that are driven by dimensions—think standard office fare like desks and shelving or tools that can vary in size. With the parametric approach, engineers can quickly and easily create different configurations of their designs.</em></p>
+<p><strong>Direct Modeling</strong></p>
+<p>Direct modeling empowers you to define and capture geometry quickly, without spending time worrying about features, constraints, and original design intent. It is often compared to working with modeling clay. Simply push and pull the geometry until you arrive at just the shape you want.</p>
+<p><em>In direct modeling, designers can push and pull on their model to change it. One benefit of this capability is the ease with which designs can be altered, enabling rapid iteration and prototyping. For that reason, direct modeling has found a niche in the world of industrial design, where fluid curves and bold aesthetics play a big role.</em></p>
+<p><strong>So...what is Rhino and Fusion 360?</strong></p>
+<p>Fusion 360 </p>
+<ul>
+<li>Parametric Modeling</li>
+<li>History-based</li>
+<li>Does not have a node-based visual editor similar to Grasshipper built-in to Fusion (yet). The closest solution would be to use <a href="https://www.autodesk.com/products/dynamo-studio/overview">Dynamo Studio</a> and plugin <a href="http://docs.mcneel.com/rhino/5/help/en-us/commands/history.htm">Dynamo for Autodesk® Fusion 360™</a>.</li>
+</ul>
+<p>Rhino </p>
+<ul>
+<li>Direct Modeling</li>
+<li>History-free, unless it's enabled for specific operations. See <a href="http://docs.mcneel.com/rhino/5/help/en-us/commands/history.htm">History</a>.</li>
+<li>Has node-based visual editor Grasshopper (aka Explicit-history) built-in. Through Grasshopper, parametric design is possible, taking form as a "definition" which consists of the design history and thereby the object.</li>
+</ul>
+<p>Others</p>
+<p>In the past few years, many other types of CAD-like hybrid environments have come to term such as <a href="https://www.onshape.com/">Onshape</a>, a CAD based prodcut design platform.</p>
+<p>Similarly, node-based editors or plugins for CAD environments offer designers open-source and accessible alternatives to Grasshopper and Dynamo. Tools such as <a href="http://nikitron.cc.ua/sverchok_en.html">Sverchok</a> and <a href="https://github.com/aachman98/Sorcar">Sorcar</a> for <a href="https://www.blender.org/">Blender</a> are paving the way.</p>
+<p>References: </p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Parametric_design">Parametric Design (Wikipedia)</a>, </li>
+<li><a href="https://www.engineering.com/DesignSoftware/DesignSoftwareArticles/ArticleID/16587/Whats-the-Difference-Between-Parametric-and-Direct-Modeling.aspx">What’s the Difference Between Parametric and Direct Modeling?</a></li>
+<li><a href="http://wiki.bk.tudelft.nl/toi-pedia/Introduction_Grasshopper_and_History">Introduction Grasshopper and History</a></li>
+<li><a href="https://www.ptc.com/en/blogs/cad/parametric-vs-direct-modeling-which-side-are-you-on">Parametric vs Direct Modeling</a></li>
+<li><a href="https://3space.com/blog/what-is-design-intent/">What is Design Intent?</a></li>
+</ul>
+<p><strong>Examples</strong></p>
+<p>What types of objects can be considered "parametric"?</p>
+<p>Just about anything really. Some examples: Cups, Vases, Pitchers, Bottles, Bells, Bowls, Clothing, Furniture, Lighting, Cars, Personal Items, Buildings!... what else?</p>
+<ul>
+<li><a href="https://www.pinterest.com/rhinocerosg/parametric-design-examples/">Parametric Design Examples</a></li>
+<li><a href="http://100lamps.cwandt.com/">CW&amp;T 100 Dropped Pendant Lights</a> (2017)</li>
+<li><a href="https://formlabs.com/blog/parametric-design-customized-conference-swag/">Formlabs Digital Factory Pens</a> (2017)</li>
+<li><a href="https://formlabs.com/blog/gillette-uses-3d-printing-to-unlock-consumer-personalization/">Gillette Uses 3D Printing to Unlock Consumer Personalization</a> (2018)</li>
+<li><a href="https://www.anna-whitehouse.co.uk/100bottles100days">#100bottles100days by Anna Whitehouse</a> - <em>"Touch Clay Everyday"</em></li>
+<li><a href="https://n-e-r-v-o-u-s.com/labs/">Nervous System Design Apps</a>, <a href="https://n-e-r-v-o-u-s.com/kinematicsHome/">Kinematics @ Home</a></li>
+<li><a href="https://www.wovns.com/">WOVNS</a>, <a href="https://www.wovns.com/tutorials/designing-computational-textiles-with-processing/">Processing Tutorial</a></li>
+<li><a href="https://www.opendesk.cc">Opendesk</a></li>
+</ul>
+<p><strong>Fusion 360 Work Session</strong></p>
+<ul>
+<li>Open your projects for this week and lets look at issues you ran into. What gave you trouble? </li>
+<li>What ah-ha moments did you have?</li>
+<li>What oops moments did you encounter?</li>
+</ul>
+<p><strong>Rhino &amp; Intro to Grasshopper Work Session</strong></p>
+<p>If there is time and interest, we can run through an intro to Grasshopper to see how to utilize it for building up a parametric design system.</p>
 <h4 id="assignment-7-mass-customization">Assignment 7: Mass Customization</h4>
+<p>Design a parametric model and produce 3 variations that meet the needs of 3 different users.</p>
+<p>For example, 3 different chairs made to fit 3 sizes of human bodies - small, medium, large. The chairs all posses the same characteristics except the size. </p>
+<p>Thoughts on how to accomplish this:</p>
+<ul>
+<li>Spend time sketching out ideas on paper or making something physically with paper, cardboard, or other materials. Attempt to translate the shapes you put together into 3D in CAD.</li>
+<li>Iterate on your previous project. How can you make the model fully parametric? What parts of your model need to be parametric?</li>
+<li>Hint: If you are using Fusion 360, you will likely want to make use of Constraints and Dimensions in your sketches and entering values into the Parameters Window. If you are not using Fusion 360, how can you make your model parametric? What's your approach?</li>
+<li>Measure something real and physical to get the dimensions. Attempt to draw something that matches the specifications. </li>
+<li>WORK TOGETHER! Make time to work together outside of class and share modeling tips.</li>
+<li>Have fun with it!</li>
+</ul>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>
+<p>A blog post describing your design process from sketch to 3D model. </p>
+<ul>
+<li>What did you design and why?</li>
+<li>What makes your design parametric? ie. what are the parameters of your design?</li>
+<li>What challenges did you face while making your model?</li>
+<li>What resources did you use?</li>
+</ul>
+</li>
+<li>
+<p>Export a 3D model file (STL or FBX) and upload it to <a href="https://sketchfab.com/">Sketchfab</a>.</p>
+</li>
+<li>Be sure to include any screenshots and visuals created or referenced to illustrate your ideas. You can record a short video presentation or process walkthrough if that helps to share your project. Embed your video into your blog post. </li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> by EOD.</p>
 <p><strong><em>Due: Oct 19</em></strong></p>
 <hr />
 <h3 id="week-9-visualizing-products">Week 9: Visualizing Products</h3>
