@@ -2956,6 +2956,7 @@ alert(message);</code></p>
 <li><a href="https://firebase.google.com/">Firebase</a> - <a href="https://shiffman.net/a2z/firebase/">Dan Shiffman's Firebase Tutorial</a> - This is a great resource for going deeper into JS, APIs, and related programming topics in general.</li>
 <li><a href="https://sheetsu.com/">Sheetsu</a> - Makes it easy to access a Google Sheet through an API</li>
 <li><a href="https://www.getpostman.com/">Postman</a> - A great tool for testing all types of requests to/from APIs</li>
+<li><a href="https://hoppscotch.io/">hoppscotch</a> - Similar to Postman but web based</li>
 </ul>
 <p><strong>Additional Resources</strong></p>
 <p>REST, CRUD HTTP/HTTPS, Ports, URL</p>
@@ -3234,7 +3235,7 @@ alert(message);</code></p>
 <li>Assignment 6 Share<ul>
 <li>It's great to see the variety of approaches to this project.</li>
 <li>Leveraging available resources is key for working quickly on a concept while ramping up on a new skillset or toolset.</li>
-<li>Export FBX files to retain color and texture information.</li>
+<li>Export FBX files to retain basic color information when importing into Sketchfab. Textures can not be exported in any format. </li>
 </ul>
 </li>
 <li>Agenda<ul>
@@ -3289,15 +3290,10 @@ alert(message);</code></p>
 <li><a href="https://n-e-r-v-o-u-s.com/labs/">Nervous System Design Apps</a>, <a href="https://n-e-r-v-o-u-s.com/kinematicsHome/">Kinematics @ Home</a></li>
 <li><a href="https://www.wovns.com/">WOVNS</a>, <a href="https://www.wovns.com/tutorials/designing-computational-textiles-with-processing/">Processing Tutorial</a></li>
 <li><a href="https://www.opendesk.cc">Opendesk</a></li>
+<li><a href="https://www.instagram.com/parades.3d/?hl=en">Mercedes Grille Patterns</a></li>
 </ul>
 <p><strong>Fusion 360 Work Session</strong></p>
-<ul>
-<li>Open your projects for this week and lets look at issues you ran into. What gave you trouble? </li>
-<li>What ah-ha moments did you have?</li>
-<li>What oops moments did you encounter?</li>
-</ul>
-<p><strong>Rhino &amp; Intro to Grasshopper Work Session</strong></p>
-<p>If there is time and interest, we can run through an intro to Grasshopper to see how to utilize it for building up a parametric design system.</p>
+<p>Open your projects for this week and lets look at issues you ran into. What gave you trouble? </p>
 <h4 id="assignment-7-mass-customization">Assignment 7: Mass Customization</h4>
 <p>Design a parametric model and produce 3 variations that meet the needs of 3 different users.</p>
 <p>For example, 3 different chairs made to fit 3 sizes of human bodies - small, medium, large. The chairs all posses the same characteristics except the size. </p>
@@ -3331,19 +3327,143 @@ alert(message);</code></p>
 <hr />
 <h3 id="week-9-visualizing-products">Week 9: Visualizing Products</h3>
 <p><em>Oct 19</em> | <em>Location: <a href="https://cuboulder.zoom.us/j/6140595823" title="Zoom Meeting">Zoom Meeting</a></em></p>
-<!-- 
-Show tools
-* Built in Render tools for Rhino
-* Fusion render workspace
-* Other accessible render tools?
-* Exporting types of line drawings for use
-* Animation of moving parts in Fusion?
+<ul>
+<li>Upcoming<ul>
+<li>Phase 4: Next week we will start looking at digital fabrication tools and workflows. </li>
+<li>Week 12 (Nov 9) - Final project Proposal Due</li>
+</ul>
+</li>
+<li>Assignment 7 Share<ul>
+<li>What did you make and how did you make it parametric?  </li>
+<li>Questions</li>
+</ul>
+</li>
+<li>Agenda<ul>
+<li>Representing Concepts</li>
+<li>Questions Concerning the Visualization Process</li>
+<li>Examples</li>
+<li>General Workflow</li>
+<li>Workshop: Adobe Dimension</li>
+</ul>
+</li>
+</ul>
+<p><strong>Representing Concepts</strong></p>
+<p>Visualizing a product be it large or small, digital or physical, is an involved process that requires constant iteration and feedback from stakeholders. For our purposes we will begin by exploring some questions that arise in the process of designing products. </p>
+<p>Here are a few types I have encountered. I deal with several of these forms of representation everyday. What other forms of visualization can you name?</p>
+<ul>
+<li>Digital Designs</li>
+<li>Digital Mockups</li>
+<li>Digital Wireframes</li>
+<li>Line Drawings</li>
+<li>Physical Prototypes</li>
+<li>Animation</li>
+<li>Schematics</li>
+</ul>
+<p><strong>Questions Concerning the Visualization Process</strong></p>
+<p>What digital and/or physical representations need to be used to effectively communicate design intent?</p>
+<ul>
+<li>What is your idea? How do you imagine it to be?</li>
+<li>What kind of materials does your design or idea require?</li>
+<li>Is it physical or digital or both?</li>
+<li>Who is your audience? <ul>
+<li>Who will be viewing the images and making a decision through it?</li>
+</ul>
+</li>
+<li>What meaning do I wish to convey through an image or animation?</li>
+<li>How realistic does my image need to be? Do I need a render or a photo?</li>
+<li>How much time do I have to make a render? </li>
+<li>What kind of fidelity is required?</li>
+<li>Does it move or require showing functionality through animation or diagrams?</li>
+</ul>
+<p><strong>Examples</strong></p>
+<p>We will take a look at some recent examples of projects using different approaches to visualize a concepts.</p>
+<p><strong>General Workflow</strong></p>
+<p>In this class we are interested in assembling workflows that produce a result. Sometimes the workflow you use to accomplish a task is possible within a single program or it's constructed through a series of operations provided by several programs. Below is a general workflow for visualizing a product.</p>
+<ol>
+<li>Create design files in 2D or 3D. These are your design assets. </li>
+<li>Export models in a 3D format that allow for applying color, materials, textures to individual components (ie. FBX, STEP, OBJ, STL). </li>
+<li>Create 3D scene with assets, environment, and lighting in render tool of choice. In some cases, the CAD environment provides basic rendering tools.</li>
+<li>Make test renders or preview results with lower quality settings. High quality renders take longer and use more resources. Expect to wait. </li>
+<li>Repeat the process to produce quality images that can be further processed or composited. </li>
+</ol>
+<p><strong>BREAK</strong></p>
+<p><strong>Workshop: Adobe Dimension</strong>  | <em>In Class, 45 mins</em></p>
+<p>In this workshop we will walk through designing a picture frame. We will place our frame on a wall, put an image into it, and render it.</p>
+<p><strong>Goals:</strong></p>
+<ol>
+<li>Get familar with the Adobe Dimension interface and scenes</li>
+<li>Get familiar with environment, camera, models, and materials</li>
+<li>Get familiar with basic render settings</li>
+</ol>
+<!--
 
-* When do you need to make visuals for something?
-* When is a photo what you need and when is a render what you need?
+**Instructions:**
+
+1. Install [Adobe Dimension](https://www.adobe.com/products/dimension.html) via Creative Cloud Desktop App. 
+
+
  -->
 
+<p><strong>Resources</strong></p>
+<p>Adobe Dimension</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLD8AMy73ZVxVTO8x_H-dP4Ucbbng0zW1o">Getting Started with Adobe Dimension</a> - Official Youtube playlist with tutorials showing how to use the program. Start here. </li>
+<li>File Formats (<a href="https://helpx.adobe.com/dimension/how-to/import-3d-model.html">Importing 3D Models</a>)<ul>
+<li>3D Model Formats - OBJ, FBX, STL, SKP</li>
+<li>Material Formats - MDL, SBS, SBSAR</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/playlist?list=PLkiM1tZke4mg5gTykeD8Lq7zwatIUoYST">Tutorials by Dansky</a> - Playlist of tutorials showing how to use Dimension in various workflows.</li>
+<li><a href="https://www.youtube.com/watch?v=pP9Kn3PSX50">Create Easy 3D Illustrations in Adobe Dimension - Onboarding Tutorial</a> - Great intro tutorial showing how to use Dimension and XD in a workflow. </li>
+<li><a href="https://vanschneider.com/packaging-prototypes-adobe-dimension">Creating packaging and prototypes with Adobe Dimension</a></li>
+</ul>
+<p>Fusion 360</p>
+<ul>
+<li><a href="https://knowledge.autodesk.com/support/fusion-360/troubleshooting/caas/sfdcarticles/sfdcarticles/Export-format-options-for-Fusion-360.html">Export format options for Fusion 360</a></li>
+</ul>
 <h4 id="assignment-8-product-visualization">Assignment 8: Product Visualization</h4>
+<p>Using Adobe Dimension, generate 3 renders of a product or design concept you created in CAD. </p>
+<p>What does this mean? This could be 3 unique instances of a single design concept (parametric design) or it could be 3 different visual representations of a single design instance, paying special attention to exploring different environments, lighting configurations, and materials to create different moods. </p>
+<p>Project Details: </p>
+<p>The images you produce will be shared on Instagram <a href="https://www.instagram.com/criticalmakingstudio/">@criticalmakingstudio</a>. They will likely be reshared on the official CMCI Studio (<a href="https://www.instagram.com/cmci.studio/?">@cmci.studio</a>) account as well.</p>
+<ul>
+<li>Canvas Sizes<ul>
+<li>Instagram Story - 1080 x 1920 px</li>
+<li>Instagram Square - 1080 x 1080 px</li>
+</ul>
+</li>
+<li>Project Title<ul>
+<li>Give your project a title and short description. This will be included in each post. </li>
+</ul>
+</li>
+<li>Your Instagram username</li>
+</ul>
+<p>Thoughts on how to accomplish this:</p>
+<ul>
+<li>Spend some time working with Adobe Dimension to get familiar with the interface and workflow. Look through some of the Adobe tutorials to start. </li>
+<li>Export different model formats form your CAD tool. Start with FBX and STL files. Then import your models into Dimension. Find a workflow that agrees with your models. </li>
+<li>Read the User Guide. Read about <a href="https://helpx.adobe.com/dimension/user-guide.html/dimension/using/supported-file-types.ug.html">Supported file types</a> and <a href="https://helpx.adobe.com/dimension/user-guide.html/dimension/using/standard-materials.ug.html">Materials</a>.</li>
+<li>Note: Depending on your computer hardware, producing renders can take awhile. Plan ahead to make sure you have time to produce the best quality renders you can. </li>
+<li>WORK TOGETHER! Make time to work together outside of class and share rendering tips.</li>
+<li>Have fun with it!</li>
+</ul>
+<p><strong>Deliverable:</strong></p>
+<ol>
+<li>
+<p>A blog post describing your process beginning with exporting from CAD tool to setting up your renders to producing final images. </p>
+<ul>
+<li>What kind of workflow did you come up with?</li>
+<li>What worked and what didn't?</li>
+<li>What challenges did you face?</li>
+<li>What resources did you use?</li>
+</ul>
+</li>
+<li>
+<p>Produce 3 high quality images of product concepts you designed. Include these images in your blog post with a brief description for each image.</p>
+</li>
+<li>You can record a short video presentation or process walkthrough if that helps to share your project. Embed your video into your blog post. </li>
+</ol>
+<p>Submit a link to your post on Slack <strong>#cmstudio</strong> by EOD.</p>
 <p><strong><em>Due: Oct 26</em></strong></p>
 <hr />
 <h2 id="phase-4-becoming-physical">Phase 4: Becoming Physical</h2>
