@@ -468,19 +468,6 @@
     Laptops
   </a>
   
-    <nav class="md-nav" aria-label="Laptops">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
-    Software
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -579,18 +566,6 @@
   <li class="md-nav__item">
     <a href="../guides/mobile-screen-capture/" title="Mobile Screen Capture" class="md-nav__link">
       Mobile Screen Capture
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../guides/sharing-unity-projects/" title="Sharing Unity Projects" class="md-nav__link">
-      Sharing Unity Projects
     </a>
   </li>
 
@@ -1654,19 +1629,6 @@
     Laptops
   </a>
   
-    <nav class="md-nav" aria-label="Laptops">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
-    Software
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1872,28 +1834,6 @@ TODO:
 <p>The laptops are setup to be identical with following user account and installed software.</p>
 <p><strong>Account: Student</strong><br>
 <strong>Password: student</strong></p>
-<h3 id="software">Software</h3>
-<ul>
-<li><a href="http://rhino3d.com">Rhino 5</a> + <a href="http://www.grasshopper3d.com/">Grasshopper</a></li>
-<li><a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360</a></li>
-<li><a href="http://unity3d.com">Unity 5.6.4</a></li>
-<li><a href="http://unity3d.com">Unity 2017.2.1</a></li>
-<li><a href="http://unity3d.com">Unity 2017.3.0</a></li>
-<li><a href="http://store.steampowered.com/">Steam</a></li>
-<li><a href="https://www.assetstore.unity3d.com/en/#!/content/32647">SteamVR</a></li>
-<li><a href="https://www.autodesk.com/products/maya/overview">Maya 2018</a></li>
-<li><a href="https://www.adobe.com/creativecloud.html">Adobe Creative Cloud</a> - Login Required</li>
-<li><a href="https://www.blender.org/">Blender</a></li>
-<li><a href="https://www.meshmixer.com/">Meshmixer</a></li>
-<li><a href="https://www.google.com/chrome/">Google Chrome</a></li>
-<li><a href="https://www.mozilla.org/en-US/firefox/">Firefox</a></li>
-<li><a href="https://www.visualstudio.com/downloads/">Visual Studio 2017 Community</a></li>
-<li><a href="https://ultimaker.com/en/products/ultimaker-cura-software">Ultimaker Cura</a></li>
-<li><a href="https://screencast-o-matic.com/">Screencast-O-Matic</a></li>
-<li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
-<li><a href="http://www.meshlab.net/">Meshlab</a></li>
-<li><a href="https://www.daz3d.com/">DAZ 3D</a></li>
-</ul>
 <h2 id="file-server">File Server</h2>
 <p>The Critical Making Studio has a local network shared folder for transferring large projects between computers. You can access it locally at the studio or remotely from outside the studio. </p>
 <p>Server Use</p>
@@ -1901,9 +1841,10 @@ TODO:
 <li>Make sure you keep backups of your projects on your local machines in case the server is ever down or someone deletes a folder.</li>
 <li>Be aware that once you delete a folder from the server its gone forever.</li>
 <li>You may make any folders you want or use any of the folders with your name.</li>
+<li><code>http</code> uses an unencrypted connection on port <code>5005</code> and will be faster than using <code>https</code> on port <code>5006</code>.</li>
 </ul>
 <h3 id="local-access">Local Access</h3>
-<p>Connect to <strong>CMCI-STUDIO-2</strong> network in the North Studio via Wifi or Ethernet cable. </p>
+<p>IMPORTANT: Connect to <strong>CMCI-STUDIO-2</strong> network in the North Studio via Wifi or Ethernet cable. It will not work if you try to connect from CMCI-STUDIO-1 this way.</p>
 <p>On MacOS:</p>
 <ol>
 <li>Go &gt; Connect to Server (CMD + K)</li>
@@ -1921,13 +1862,24 @@ TODO:
 <li>The shared folder should appear in the Windows Explorer as a network drive.</li>
 </ol>
 <h3 id="remote-access">Remote Access</h3>
+<p>Remote access is possible from any Internet connection (ie. home, work, coffee shop, etc).</p>
 <p>On MacOS:</p>
 <ol>
 <li>Go &gt; Connect to Server (CMD + K)</li>
-<li>Enter: <code>https://cmcistudio.synology.me:5006</code></li>
+<li>Enter: <code>http://cmcistudio.synology.me:5005</code></li>
 <li>Click Connect</li>
 <li>Enter Username and Password when prompted.</li>
-<li>The shared folder should appear in the Finder. If it doesn’t, go to Go &gt; Network (SHIFT+CMD+K) and you will see the "cmcistudio.synology.me:5006" server with “cm_share” available.  </li>
+<li>The shared folder should appear in the Finder. If it doesn’t, go to Go &gt; Network (SHIFT+CMD+K) and you will see the "cmcistudio.synology.me:5005" server with "cm_share" folder available.</li>
+</ol>
+<p>On Windows:</p>
+<ol>
+<li>Download and install <a href="https://cyberduck.io/">Cyberduck</a></li>
+<li>Make a new connection (+ Open Connection)</li>
+<li>Choose WebDAV (HTTP)</li>
+<li>Enter Server and Port. Server: <code>cmcistudio.synology.me</code> Port: <code>5005</code></li>
+<li>Enter Username and Password when prompted.</li>
+<li>Click Connect and approve any certificate prompts. </li>
+<li>The shared folder should appear in the window when connection is established.</li>
 </ol>
 <!--
 
